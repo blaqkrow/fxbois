@@ -6976,3 +6976,123 @@ SyntaxError: Identifier 'loansRef' has already been declared
 [debug] [2020-05-16T16:17:39.830Z] [runtime-status] [19552] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
 [debug] [2020-05-16T16:17:39.832Z] [worker-~diagnostic~-0d31425a-3d4a-4d7f-b2fb-db03894bca44]: IDLE 
 [debug] [2020-05-16T16:18:10.417Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T16:18:11.418Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T16:18:11.418Z] [worker-~diagnostic~-0d31425a-3d4a-4d7f-b2fb-db03894bca44]: FINISHING 
+[debug] [2020-05-16T16:18:11.419Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T16:18:11.447Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T16:18:11.447Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T16:18:11.447Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T16:18:11.447Z] [worker-~diagnostic~-9e4e6bde-18a3-468f-9287-9d7c427f67db]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\18860 
+[debug] [2020-05-16T16:18:11.447Z] [worker-~diagnostic~-9e4e6bde-18a3-468f-9287-9d7c427f67db]: BUSY 
+[debug] [2020-05-16T16:18:11.447Z] [worker-~diagnostic~-0d31425a-3d4a-4d7f-b2fb-db03894bca44]: exited 
+[debug] [2020-05-16T16:18:11.447Z] [worker-~diagnostic~-0d31425a-3d4a-4d7f-b2fb-db03894bca44]: FINISHED 
+[debug] [2020-05-16T16:18:11.931Z] [runtime-status] [18860] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T16:18:11.934Z] [runtime-status] [18860] Disabled runtime features: undefined 
+[debug] [2020-05-16T16:18:11.940Z] [runtime-status] [18860] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:18:11.942Z] [runtime-status] [18860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T16:18:11.945Z] [runtime-status] [18860] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T16:18:11.990Z] [runtime-status] [18860] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T16:18:11.991Z] [runtime-status] [18860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:18:11.992Z] [runtime-status] [18860] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:18:11.992Z] [runtime-status] [18860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:18:11.992Z] [runtime-status] [18860] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T16:18:12.265Z] [runtime-status] [18860] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T16:18:12.267Z] [worker-~diagnostic~-9e4e6bde-18a3-468f-9287-9d7c427f67db]: IDLE 
+[debug] [2020-05-16T16:27:19.221Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T16:27:20.222Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T16:27:20.223Z] [worker-~diagnostic~-9e4e6bde-18a3-468f-9287-9d7c427f67db]: FINISHING 
+[debug] [2020-05-16T16:27:20.223Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T16:27:20.244Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T16:27:20.244Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T16:27:20.244Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T16:27:20.244Z] [worker-~diagnostic~-59ba507c-8438-4f48-a139-f093d7fedaa5]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\18016 
+[debug] [2020-05-16T16:27:20.244Z] [worker-~diagnostic~-59ba507c-8438-4f48-a139-f093d7fedaa5]: BUSY 
+[debug] [2020-05-16T16:27:20.244Z] [worker-~diagnostic~-9e4e6bde-18a3-468f-9287-9d7c427f67db]: exited 
+[debug] [2020-05-16T16:27:20.244Z] [worker-~diagnostic~-9e4e6bde-18a3-468f-9287-9d7c427f67db]: FINISHED 
+[debug] [2020-05-16T16:27:20.759Z] [runtime-status] [18016] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T16:27:20.761Z] [runtime-status] [18016] Disabled runtime features: undefined 
+[debug] [2020-05-16T16:27:20.766Z] [runtime-status] [18016] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:27:20.768Z] [runtime-status] [18016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T16:27:20.770Z] [runtime-status] [18016] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T16:27:20.812Z] [runtime-status] [18016] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T16:27:20.813Z] [runtime-status] [18016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:27:20.814Z] [runtime-status] [18016] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:27:20.815Z] [runtime-status] [18016] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:27:20.815Z] [runtime-status] [18016] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T16:27:21.107Z] [runtime-status] [18016] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T16:27:21.109Z] [worker-~diagnostic~-59ba507c-8438-4f48-a139-f093d7fedaa5]: IDLE 
+[debug] [2020-05-16T16:34:28.351Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T16:34:29.352Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T16:34:29.352Z] [worker-~diagnostic~-59ba507c-8438-4f48-a139-f093d7fedaa5]: FINISHING 
+[debug] [2020-05-16T16:34:29.353Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T16:34:29.377Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T16:34:29.378Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T16:34:29.378Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T16:34:29.378Z] [worker-~diagnostic~-8afc3c70-11e8-46cf-802c-05cc34ef754b]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19948 
+[debug] [2020-05-16T16:34:29.378Z] [worker-~diagnostic~-8afc3c70-11e8-46cf-802c-05cc34ef754b]: BUSY 
+[debug] [2020-05-16T16:34:29.378Z] [worker-~diagnostic~-59ba507c-8438-4f48-a139-f093d7fedaa5]: exited 
+[debug] [2020-05-16T16:34:29.378Z] [worker-~diagnostic~-59ba507c-8438-4f48-a139-f093d7fedaa5]: FINISHED 
+[debug] [2020-05-16T16:34:29.896Z] [runtime-status] [19948] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T16:34:29.899Z] [runtime-status] [19948] Disabled runtime features: undefined 
+[debug] [2020-05-16T16:34:29.905Z] [runtime-status] [19948] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:29.907Z] [runtime-status] [19948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T16:34:29.909Z] [runtime-status] [19948] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T16:34:29.951Z] [runtime-status] [19948] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T16:34:29.952Z] [runtime-status] [19948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:29.954Z] [runtime-status] [19948] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:29.954Z] [runtime-status] [19948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:29.954Z] [runtime-status] [19948] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T16:34:30.241Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T16:34:30.251Z] [runtime-status] [19948] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T16:34:30.252Z] [worker-~diagnostic~-8afc3c70-11e8-46cf-802c-05cc34ef754b]: IDLE 
+[debug] [2020-05-16T16:34:31.242Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T16:34:31.242Z] [worker-~diagnostic~-8afc3c70-11e8-46cf-802c-05cc34ef754b]: FINISHING 
+[debug] [2020-05-16T16:34:31.242Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T16:34:31.259Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T16:34:31.259Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T16:34:31.259Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T16:34:31.259Z] [worker-~diagnostic~-033bcde0-3125-4aa5-a92a-326ed5f7b293]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\9608 
+[debug] [2020-05-16T16:34:31.259Z] [worker-~diagnostic~-033bcde0-3125-4aa5-a92a-326ed5f7b293]: BUSY 
+[debug] [2020-05-16T16:34:31.259Z] [worker-~diagnostic~-8afc3c70-11e8-46cf-802c-05cc34ef754b]: exited 
+[debug] [2020-05-16T16:34:31.259Z] [worker-~diagnostic~-8afc3c70-11e8-46cf-802c-05cc34ef754b]: FINISHED 
+[debug] [2020-05-16T16:34:31.749Z] [runtime-status] [9608] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T16:34:31.751Z] [runtime-status] [9608] Disabled runtime features: undefined 
+[debug] [2020-05-16T16:34:31.756Z] [runtime-status] [9608] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:31.758Z] [runtime-status] [9608] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T16:34:31.761Z] [runtime-status] [9608] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T16:34:31.800Z] [runtime-status] [9608] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T16:34:31.800Z] [runtime-status] [9608] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:31.802Z] [runtime-status] [9608] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:31.802Z] [runtime-status] [9608] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:34:31.802Z] [runtime-status] [9608] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T16:34:32.093Z] [runtime-status] [9608] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T16:34:32.095Z] [worker-~diagnostic~-033bcde0-3125-4aa5-a92a-326ed5f7b293]: IDLE 
+[debug] [2020-05-16T16:35:07.355Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T16:35:08.356Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T16:35:08.356Z] [worker-~diagnostic~-033bcde0-3125-4aa5-a92a-326ed5f7b293]: FINISHING 
+[debug] [2020-05-16T16:35:08.356Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T16:35:08.374Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T16:35:08.374Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T16:35:08.374Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T16:35:08.375Z] [worker-~diagnostic~-ac0311d4-38c9-44e0-877e-2781386bc933]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19328 
+[debug] [2020-05-16T16:35:08.375Z] [worker-~diagnostic~-ac0311d4-38c9-44e0-877e-2781386bc933]: BUSY 
+[debug] [2020-05-16T16:35:08.375Z] [worker-~diagnostic~-033bcde0-3125-4aa5-a92a-326ed5f7b293]: exited 
+[debug] [2020-05-16T16:35:08.375Z] [worker-~diagnostic~-033bcde0-3125-4aa5-a92a-326ed5f7b293]: FINISHED 
+[debug] [2020-05-16T16:35:08.883Z] [runtime-status] [19328] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T16:35:08.887Z] [runtime-status] [19328] Disabled runtime features: undefined 
+[debug] [2020-05-16T16:35:08.894Z] [runtime-status] [19328] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:35:08.896Z] [runtime-status] [19328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T16:35:08.898Z] [runtime-status] [19328] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T16:35:08.952Z] [runtime-status] [19328] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T16:35:08.953Z] [runtime-status] [19328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:35:08.954Z] [runtime-status] [19328] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T16:35:08.954Z] [runtime-status] [19328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T16:35:08.955Z] [runtime-status] [19328] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T16:35:09.314Z] [runtime-status] [19328] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T16:35:09.316Z] [worker-~diagnostic~-ac0311d4-38c9-44e0-877e-2781386bc933]: IDLE 
+[debug] [2020-05-16T16:35:09.347Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 

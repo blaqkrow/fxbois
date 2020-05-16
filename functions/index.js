@@ -57,7 +57,7 @@ exports.insertloan = functions.https.onCall((data, context) => {
     return loansRef.where('tenor', '<=', data.tenorSelected).get()
     .then(snapshot => {
 
-        return snapshot.docs
+        
     })
     .then()
     .catch(err => {return err})
@@ -109,9 +109,7 @@ function createCurrentAccount(encodedKey) {
         firstName: data.firstName,
         lastName: data.lastName,
         preferredLanguage: "ENGLISH",
-        notes: "Enjoys playing RPG",
-        assignedBranchKey: "8a8e878e71c7a4d70171ca4ae85f108b",
-        
+        assignedBranchKey: "8a8e878e71c7a4d70171ca4ae85f108b",        
         idDocuments: [
             {
                 identificationDocumentTemplateKey: "8a8e867271bd280c0171bf7e4ec71b01",
@@ -122,8 +120,6 @@ function createCurrentAccount(encodedKey) {
             }
         ],
         addresses: [],
-       
-        
     }
 
     const headers = {
