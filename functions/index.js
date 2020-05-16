@@ -63,10 +63,19 @@ exports.insertloan = functions.https.onCall((data, context) => {
             loansArr.push(doc.data())
             console.log(doc.data())
         })
-        loansArr.forEach(doc => {
-            delete doc.lender
-            delete doc.borrower 
-        })
+        
+        index = loansArr.length - 1;
+
+        while (index >= 0) {
+        if (loansArr[index].amt != parseInt(data.amt)) {
+            loansArr.splice(index, 1);
+        } else {
+            delete loansArr[index].lender
+            delete loansArr[index].borrower
+        }
+
+        index -= 1;
+        }
         const sortedLoansArr = loansArr.slice().sort(loansCompare)
         return sortedLoansArr.slice(0,2) 
     })
