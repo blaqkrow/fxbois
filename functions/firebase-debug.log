@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [debug] [2020-05-16T14:49:09.904Z] ----------------------------------------------------------------------
 [debug] [2020-05-16T14:49:09.906Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\Tony\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
 [debug] [2020-05-16T14:49:09.906Z] CLI Version:   8.2.0
@@ -14726,3 +14727,5 @@ SyntaxError: Unexpected token '<'
 [info] i  functions: Finished "insertloan" in ~1s
 [debug] [2020-05-16T18:41:26.209Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: IDLE 
 [debug] [2020-05-16T18:41:26.209Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+=======
+>>>>>>> d72e71363676eb5e3101b22593ec2b2d294c65f2

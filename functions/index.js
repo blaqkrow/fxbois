@@ -1,10 +1,9 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-const axios = require('axios')
 const base64 = require('base-64');
 const fetch = require('node-fetch')
-const firebase = require('firebase')
 var rp = require('request-promise');
+const firebase = require('firebase')
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
@@ -17,10 +16,10 @@ firebase.initializeApp({
     projectId: "fxbois-razer"
 })
 
-admin.initializeApp({
+/*admin.initializeApp({
     //databaseURL: "http://localhost:5678"
     
-})
+})*/
 
     
 
@@ -60,21 +59,21 @@ exports.insertloan = functions.https.onCall((data, context) => {
     .then(snapshot => {
         let loansArr = []
         snapshot.forEach(doc =>{
-            loansArr.push(doc.data())
+            loansArr.push({lid: data.id, data: doc.data()})
             console.log(doc.data())
         })
         
         index = loansArr.length - 1;
 
         while (index >= 0) {
-        if (loansArr[index].amt != parseInt(data.amt)) {
-            loansArr.splice(index, 1);
-        } else {
-            delete loansArr[index].lender
-            delete loansArr[index].borrower
-        }
+            if (loansArr[index].data.amt != parseInt(data.amt)) {
+                loansArr.splice(index, 1);
+            } else {
+                delete loansArr[index].data.lender
+                delete loansArr[index].data.borrower
+            }
 
-        index -= 1;
+            index -= 1;
         }
         const sortedLoansArr = loansArr.slice().sort(loansCompare)
         return sortedLoansArr.slice(0,2) 
@@ -204,4 +203,93 @@ exports.kyc = functions.https.onCall((data, context) => {
         console.log(body)
         return body
     })
+})
+
+exports.getBankAccountDetails = functions.https.onCall( async (data, context) =>{
+    const db = firebase.firestore()
+    let userRef = db.collection('users').doc(data)
+    let user = await userRef.get()
+    let acctId =  user.data().mambuBankAcc
+    const headers = {
+        'Accept':'application/vnd.mambu.v2+json',
+        'Accept':'application/json',
+        'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
+      };
+    var options = {
+        uri: 'https://razerhackathon.sandbox.mambu.com/api/savings?accountHolderId=' + acctId + '&accountHolderType=CLIENT',
+        headers: headers,
+        json: true,
+    }
+    return rp(options).then((response) =>{
+        return response;
+    })
+
+})
+
+exports.depositMoneyIntoAcct = functions.https.onCall( async (data, context)=>{
+    console.log(data)
+    var sendJson = {
+        "amount": data.amount,
+        "notes": "Deposit into savings account",
+        "type": "DEPOSIT",
+        "method": "bank",
+        "customInformation": [
+            {
+                "value": "unique identifier for receipt",
+                "customFieldID": "IDENTIFIER_TRANSACTION_CHANNEL_I"
+            }
+        ]
+    }
+
+    const headers = {
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+        'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
+      };
+    
+    return fetch('https://razerhackathon.sandbox.mambu.com/api/savings/' + data.accountId + '/transactions',
+      {
+        method: 'POST',
+        body: JSON.stringify(sendJson),
+        headers: headers
+      })
+      .then(res => {return res.json()})
+      .then(body => {
+          var result = {
+              transactionId: body['transactionId'],
+              balance: body['balance'],
+          }
+          return result})
+})
+
+exports.transferMoneyToAnotherAcct = functions.https.onCall((data,context) =>{
+    var sendJson = {
+        "type": "TRANSFER",
+        "amount": data.amount,
+        "notes": "Transfer to Expenses Account",
+        "toSavingsAccount": data.recvAcctId,
+        "method" :"bank"
+    }
+
+    const headers = {
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+        'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
+      };
+    
+    return fetch('https://razerhackathon.sandbox.mambu.com/api/savings/' + data.sendAcctId + '/transactions',
+      {
+        method: 'POST',
+        body: JSON.stringify(sendJson),
+        headers: headers
+      })
+      .then(res => {return res.json()})
+      .then(body => {
+          var result = {
+              transactionId: body['transactionId'],
+              balance: body['balance'],
+              currencyCode: body['currencyCode']
+          }
+          return result})
+
 })

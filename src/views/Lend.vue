@@ -97,13 +97,7 @@
     </v-card-text>
   </v-card>
   <br>
-  <v-btn block color="secondary" dark @click="submitlend()">
-    Submit Lend
-    </v-btn>
-  <v-btn block color="#E32D91" dark>Submit Lend</v-btn>
   <v-btn block color="#E32D91" dark @click="submitlend()">Submit Lend</v-btn>
-
-   <v-btn block color="#E32D91" dark @click="test()">test</v-btn>
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
@@ -125,7 +119,8 @@ export default {
             bpm: 2,
             interval: null,
             isPlaying: false,
-            investmentPerc: ['2%','3%','4%','5%',]
+            investmentPerc: ['2%','3%','4%','5%',],
+            invAmt:'',
         }
     },
     computed: {
@@ -153,9 +148,8 @@ export default {
       toggle () {
         this.isPlaying = !this.isPlaying
       },
-      
       submitlend(){
-       
+        console.log("SUBMIT")
         if (window.location.href.indexOf("localhost") > -1) {
           firebase.functions().useFunctionsEmulator("http://localhost:5001")
         }
