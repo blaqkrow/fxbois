@@ -36,13 +36,13 @@ exports.insertloan = functions.https.onCall((data, context) => {
     const loanAmt = parseFloat(data.amt)
     const intr = parseFloat(data.interest.replace('%',''))
     const actualIntr = ((intr/100) * (parseFloat(data.tenor)/12)) * loanAmt
-    const monthlyRepayment = (loanAmt + actualIntr)/data.tenor
+    const monthlyRepayment = parseFloat((loanAmt + actualIntr)/data.tenor)
     return newDoc.set({
         tenor:parseInt(data.tenor),
         amt: loanAmt,
         interest: intr,
         borrower:'',
-        lender:'',
+        lender:data.lender,
         monthlyRepayment: monthlyRepayment,
         actualInterest: actualIntr
     }).then(saved => {
@@ -55,14 +55,30 @@ exports.insertloan = functions.https.onCall((data, context) => {
  exports.getTopLoans = functions.https.onCall((data, context) =>  {
     const db = firebase.firestore()
     let loansRef = db.collection('loans')
-    let toploans = loansRef.where('tenor', '<=', parseInt(data.tenorSelected))
-    toploans.get()
+    let toploans = loansRef.where('tenor', '>=', parseInt(data.tenorSelected))
+    return toploans.get()
     .then(snapshot => {
-        console.log(snapshot)
-        return snapshot.docs        
+        let loansArr = []
+        snapshot.forEach(doc =>{
+            loansArr.push(doc.data())
+            console.log(doc.data())
+        })
+        loansArr.forEach(doc => {
+            delete doc.lender
+            delete doc.borrower 
+        })
+        const sortedLoansArr = loansArr.slice().sort(loansCompare)
+        return sortedLoansArr.slice(0,2) 
     })
     .catch(err => {return err})
  })
+
+ function loansCompare(a, b) {
+    if (a.actualInterest > b.actualInterest) return 1;
+    if (b.actualInterest > a.actualInterest) return -1;
+  
+    return 0;
+  }
 
 
 

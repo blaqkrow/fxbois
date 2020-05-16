@@ -146,6 +146,9 @@ export default {
       toggle () {
         this.isPlaying = !this.isPlaying
       },
+      getUser() {
+        return this.$store.getters.getUser
+      },
       submitlend(){
        
         if (window.location.href.indexOf("localhost") > -1) {
@@ -154,7 +157,8 @@ export default {
         firebase.functions().httpsCallable('insertloan')({
           tenor:this.bpm, 
           interest:this.invPerc, 
-          amt:this.invAmt
+          amt:this.invAmt,
+          lender: this.getUser.uid
         }).then(response => {
           console.log(response)
         }) 
