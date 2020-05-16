@@ -96,6 +96,9 @@
   </v-card>
   <br>
   <v-btn block color="#E32D91" dark>Submit Lend</v-btn>
+  <v-btn block color="#E32D91" dark @click="submitlend()">Submit Lend</v-btn>
+
+   <v-btn block color="#E32D91" dark @click="test()">test</v-btn>
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
@@ -108,6 +111,8 @@
 </template>
 
 <script>
+import db, {auth} from '@/firebase/init'
+import firebase from 'firebase'
 export default {
     data() {
         return {
@@ -140,6 +145,28 @@ export default {
       toggle () {
         this.isPlaying = !this.isPlaying
       },
+      submitlend(){
+       
+        if (window.location.href.indexOf("localhost") > -1) {
+          firebase.functions().useFunctionsEmulator("http://localhost:5001")
+        }
+        firebase.functions().httpsCallable('insertloan')({
+          tenor:this.bpm, 
+          interest:this.invPerc, 
+          amt:this.invAmt
+        }).then(response => {
+          console.log(response)
+        }) 
+      },
+      test() {
+        db.collection('loans').where("tenor", ">=", 10).get()
+        .then( snap => {
+          snap.forEach(doc => {
+            console.log('doc: ', doc.data())
+
+          })
+        })
+      }
     },
 }
 </script>
