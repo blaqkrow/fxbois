@@ -26,7 +26,6 @@
             placeholder="Loan Amount"
             prepend-inner-icon="$"
             solo
-            @keyup="getTop2Loans"
             type="number"
             ></v-text-field>
         </div>
@@ -192,12 +191,9 @@ export default {
           amt:this.loanAmt
         }).then(response => {
           console.log(response)
+          this.top2Loans = null
           this.top2Loans = response.data
         }) 
-      },
-      getTop2Loans() {
-        console.log('Hi')
-        console.log('Loan amt: ', this.loanAmt)
       },
     },
 }
