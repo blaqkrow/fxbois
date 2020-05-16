@@ -139,6 +139,9 @@ export default {
       animationDuration () {
         return `${60 / this.bpm}s`
       },
+      getUser() {
+        return this.$store.getters.getUser
+      },
     },
     methods: {
       decrement () {
@@ -150,9 +153,7 @@ export default {
       toggle () {
         this.isPlaying = !this.isPlaying
       },
-      getUser() {
-        return this.$store.getters.getUser
-      },
+      
       submitlend(){
        
         if (window.location.href.indexOf("localhost") > -1) {

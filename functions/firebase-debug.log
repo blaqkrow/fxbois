@@ -12208,3 +12208,575 @@ SyntaxError: Unexpected token '<'
 [debug] [2020-05-16T17:52:30.635Z] [worker-getTopLoans-0a4e977b-b1f2-4985-a387-76891eee1c36]: IDLE 
 [debug] [2020-05-16T17:52:30.636Z] [work-queue] {"queueLength":0,"workRunningCount":1}
 [debug] [2020-05-16T17:52:44.375Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T17:52:45.376Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T17:52:45.376Z] [worker-~diagnostic~-f1455352-cbbc-42a5-b60b-3579142ac037]: FINISHING 
+[debug] [2020-05-16T17:52:45.376Z] [worker-pool] Shutting down IDLE worker (getTopLoans) 
+[debug] [2020-05-16T17:52:45.376Z] [worker-getTopLoans-64d320b0-118c-4985-b6e0-efea415c60b4]: FINISHING 
+[debug] [2020-05-16T17:52:45.376Z] [worker-pool] Shutting down IDLE worker (getTopLoans) 
+[debug] [2020-05-16T17:52:45.376Z] [worker-getTopLoans-0a4e977b-b1f2-4985-a387-76891eee1c36]: FINISHING 
+[debug] [2020-05-16T17:52:45.394Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:52:45.394Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T17:52:45.394Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:52:45.394Z] [worker-~diagnostic~-1798a06c-73d4-4a80-b02f-e5ca0389c93b]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\17444 
+[debug] [2020-05-16T17:52:45.394Z] [worker-~diagnostic~-1798a06c-73d4-4a80-b02f-e5ca0389c93b]: BUSY 
+[debug] [2020-05-16T17:52:45.395Z] [worker-~diagnostic~-f1455352-cbbc-42a5-b60b-3579142ac037]: exited 
+[debug] [2020-05-16T17:52:45.395Z] [worker-~diagnostic~-f1455352-cbbc-42a5-b60b-3579142ac037]: FINISHED 
+[debug] [2020-05-16T17:52:45.395Z] [worker-getTopLoans-64d320b0-118c-4985-b6e0-efea415c60b4]: exited 
+[debug] [2020-05-16T17:52:45.395Z] [worker-getTopLoans-64d320b0-118c-4985-b6e0-efea415c60b4]: FINISHED 
+[debug] [2020-05-16T17:52:45.395Z] [worker-getTopLoans-0a4e977b-b1f2-4985-a387-76891eee1c36]: exited 
+[debug] [2020-05-16T17:52:45.395Z] [worker-getTopLoans-0a4e977b-b1f2-4985-a387-76891eee1c36]: FINISHED 
+[debug] [2020-05-16T17:52:45.872Z] [runtime-status] [17444] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T17:52:45.874Z] [runtime-status] [17444] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:52:45.879Z] [runtime-status] [17444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:45.881Z] [runtime-status] [17444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T17:52:45.885Z] [runtime-status] [17444] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T17:52:45.927Z] [runtime-status] [17444] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T17:52:45.927Z] [runtime-status] [17444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:45.929Z] [runtime-status] [17444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:45.929Z] [runtime-status] [17444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:45.929Z] [runtime-status] [17444] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T17:52:46.498Z] [runtime-status] [17444] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T17:52:46.500Z] [worker-~diagnostic~-1798a06c-73d4-4a80-b02f-e5ca0389c93b]: IDLE 
+[debug] [2020-05-16T17:52:46.701Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:52:46.701Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:52:46.701Z] Accepted request OPTIONS /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T17:52:46.702Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T17:52:46.702Z] [worker-pool] Cleaned up workers for getTopLoans: 2 --> 0 
+[debug] [2020-05-16T17:52:46.718Z] [worker-pool] addWorker(getTopLoans) 
+[debug] [2020-05-16T17:52:46.718Z] [worker-pool] Adding worker with key getTopLoans, total=1 
+[debug] [2020-05-16T17:52:46.718Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T17:52:46.718Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19152 
+[debug] [2020-05-16T17:52:46.718Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: BUSY 
+[debug] [2020-05-16T17:52:47.213Z] [runtime-status] [19152] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T17:52:47.217Z] [runtime-status] [19152] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:52:47.225Z] [runtime-status] [19152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:47.227Z] [runtime-status] [19152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T17:52:47.229Z] [runtime-status] [19152] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T17:52:47.279Z] [runtime-status] [19152] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T17:52:47.280Z] [runtime-status] [19152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:47.282Z] [runtime-status] [19152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:47.283Z] [runtime-status] [19152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:47.283Z] [runtime-status] [19152] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T17:52:47.826Z] [runtime-status] [19152] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T17:52:47.828Z] [runtime-status] [19152] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T17:52:47.829Z] [runtime-status] [19152] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T17:52:47.829Z] [runtime-status] [19152] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T17:52:47.834Z] [runtime-status] [19152] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19152 
+[debug] [2020-05-16T17:52:47.836Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:52:47.846Z] [runtime-status] [19152] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:52:47.852Z] [runtime-status] [19152] Ephemeral server survived. 
+[debug] [2020-05-16T17:52:47.853Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T17:52:47.853Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T17:52:47.853Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T17:52:47.853Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:52:47.869Z] [worker-pool] addWorker(getTopLoans) 
+[debug] [2020-05-16T17:52:47.870Z] [worker-pool] Adding worker with key getTopLoans, total=2 
+[debug] [2020-05-16T17:52:47.870Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T17:52:47.870Z] [worker-getTopLoans-a7fafd3a-d504-4c6a-92c7-875cc1b9c8e6]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\9800 
+[debug] [2020-05-16T17:52:47.870Z] [worker-getTopLoans-a7fafd3a-d504-4c6a-92c7-875cc1b9c8e6]: BUSY 
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T17:52:47.870Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: IDLE 
+[debug] [2020-05-16T17:52:47.870Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:52:48.290Z] [runtime-status] [9800] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T17:52:48.292Z] [runtime-status] [9800] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:52:48.297Z] [runtime-status] [9800] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:48.299Z] [runtime-status] [9800] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T17:52:48.302Z] [runtime-status] [9800] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T17:52:48.341Z] [runtime-status] [9800] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T17:52:48.342Z] [runtime-status] [9800] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:48.343Z] [runtime-status] [9800] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:48.344Z] [runtime-status] [9800] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:52:48.344Z] [runtime-status] [9800] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T17:52:48.854Z] [runtime-status] [9800] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T17:52:48.856Z] [runtime-status] [9800] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T17:52:48.857Z] [runtime-status] [9800] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T17:52:48.857Z] [runtime-status] [9800] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T17:52:48.861Z] [runtime-status] [9800] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\9800 
+[debug] [2020-05-16T17:52:48.863Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:52:48.902Z] [runtime-status] [9800] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:52:48.904Z] [runtime-status] [9800] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:52:48.983Z] [runtime-status] [9800] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    lender: null, {"user":"  lender: null,"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 28 {"user":"  tenor: 28"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: null, {"user":"  lender: null,"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334 {"user":"  actualInterest: 933.3333333333334"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T17:52:49.554Z] [worker-getTopLoans-a7fafd3a-d504-4c6a-92c7-875cc1b9c8e6]: IDLE 
+[debug] [2020-05-16T17:52:49.554Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:00.236Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:00.236Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:00.236Z] Accepted request OPTIONS /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T17:53:00.236Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T17:53:00.236Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19152 
+[debug] [2020-05-16T17:53:00.236Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: BUSY 
+[debug] [2020-05-16T17:53:00.237Z] [runtime-status] [19152] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T17:53:00.237Z] [runtime-status] [19152] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T17:53:00.238Z] [runtime-status] [19152] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T17:53:00.238Z] [runtime-status] [19152] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19152 
+[debug] [2020-05-16T17:53:00.239Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:00.241Z] [runtime-status] [19152] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:53:00.241Z] [runtime-status] [19152] Ephemeral server survived. 
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T17:53:00.242Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: IDLE 
+[debug] [2020-05-16T17:53:00.242Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:00.242Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:00.242Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:00.243Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T17:53:00.243Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:00.243Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T17:53:00.243Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19152 
+[debug] [2020-05-16T17:53:00.243Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: BUSY 
+[debug] [2020-05-16T17:53:00.253Z] [runtime-status] [19152] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T17:53:00.255Z] [runtime-status] [19152] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T17:53:00.255Z] [runtime-status] [19152] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T17:53:00.255Z] [runtime-status] [19152] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19152 
+[debug] [2020-05-16T17:53:00.257Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:00.283Z] [runtime-status] [19152] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:00.285Z] [runtime-status] [19152] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:00.367Z] [runtime-status] [19152] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 9, {"user":"  tenor: 9,"}
+[info] >    lender: null, {"user":"  lender: null,"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 112.77777777777777, {"user":"  monthlyRepayment: 112.77777777777777,"}
+[info] >    actualInterest: 15, {"user":"  actualInterest: 15,"}
+[info] >    interest: 2 {"user":"  interest: 2"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: null, {"user":"  lender: null,"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 802.5641025641027, {"user":"  monthlyRepayment: 802.5641025641027,"}
+[info] >    actualInterest: 433.33333333333326, {"user":"  actualInterest: 433.33333333333326,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 13, {"user":"  tenor: 13,"}
+[info] >    amt: 10000 {"user":"  amt: 10000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 14, {"user":"  tenor: 14,"}
+[info] >    lender: null, {"user":"  lender: null,"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 73.0952380952381, {"user":"  monthlyRepayment: 73.0952380952381,"}
+[info] >    actualInterest: 23.333333333333336, {"user":"  actualInterest: 23.333333333333336,"}
+[info] >    interest: 2 {"user":"  interest: 2"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: null, {"user":"  lender: null,"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332 {"user":"  actualInterest: 63.33333333333332"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: null {"user":"  lender: null"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: null {"user":"  lender: null"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: null {"user":"  lender: null"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T17:53:01.012Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: IDLE 
+[debug] [2020-05-16T17:53:01.012Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:18.929Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:18.929Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:18.929Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:18.946Z] [worker-pool] addWorker(insertloan) 
+[debug] [2020-05-16T17:53:18.946Z] [worker-pool] Adding worker with key insertloan, total=1 
+[debug] [2020-05-16T17:53:18.946Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:18.946Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:18.946Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:19.392Z] [runtime-status] [20656] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T17:53:19.395Z] [runtime-status] [20656] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:53:19.401Z] [runtime-status] [20656] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:19.402Z] [runtime-status] [20656] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T17:53:19.405Z] [runtime-status] [20656] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T17:53:19.449Z] [runtime-status] [20656] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T17:53:19.450Z] [runtime-status] [20656] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:19.451Z] [runtime-status] [20656] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:19.452Z] [runtime-status] [20656] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:19.452Z] [runtime-status] [20656] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T17:53:19.949Z] [runtime-status] [20656] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T17:53:19.951Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:19.951Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:19.952Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:19.956Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:19.958Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:19.966Z] [runtime-status] [20656] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:53:19.969Z] [runtime-status] [20656] Ephemeral server survived. 
+[debug] [2020-05-16T17:53:19.971Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T17:53:19.971Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T17:53:19.971Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:19.971Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:19.987Z] [worker-pool] addWorker(insertloan) 
+[debug] [2020-05-16T17:53:19.987Z] [worker-pool] Adding worker with key insertloan, total=2 
+[debug] [2020-05-16T17:53:19.987Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:19.987Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19604 
+[debug] [2020-05-16T17:53:19.987Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: BUSY 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:19.989Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:19.989Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:20.413Z] [runtime-status] [19604] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T17:53:20.415Z] [runtime-status] [19604] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:53:20.420Z] [runtime-status] [19604] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:20.422Z] [runtime-status] [19604] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T17:53:20.424Z] [runtime-status] [19604] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T17:53:20.465Z] [runtime-status] [19604] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T17:53:20.466Z] [runtime-status] [19604] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:20.467Z] [runtime-status] [19604] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:20.468Z] [runtime-status] [19604] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:53:20.468Z] [runtime-status] [19604] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T17:53:20.937Z] [runtime-status] [19604] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T17:53:20.938Z] [runtime-status] [19604] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:20.939Z] [runtime-status] [19604] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:20.939Z] [runtime-status] [19604] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:20.943Z] [runtime-status] [19604] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19604 
+[debug] [2020-05-16T17:53:20.947Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:20.974Z] [runtime-status] [19604] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:20.977Z] [runtime-status] [19604] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:21.063Z] [runtime-status] [19604] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:21.735Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: IDLE 
+[debug] [2020-05-16T17:53:21.735Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:25.815Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:25.815Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:25.815Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:25.815Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:25.815Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:25.815Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:25.816Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:25.817Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:25.817Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:25.817Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:25.819Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:25.821Z] [runtime-status] [20656] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:53:25.822Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:25.822Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:25.823Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:25.823Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:25.823Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:25.823Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:25.823Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:25.824Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:25.824Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:25.824Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:25.832Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:25.832Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:25.833Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:25.833Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:25.833Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:25.854Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:25.855Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:25.948Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:26.679Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:26.679Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:29.441Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:29.441Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:29.441Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:29.441Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:29.441Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:29.441Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:29.441Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:29.442Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:29.443Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:29.443Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:29.443Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:29.444Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:29.446Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:29.447Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:29.447Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:29.825Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:29.825Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:32.606Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:32.606Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:32.606Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:32.606Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:32.606Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:32.606Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:32.606Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:32.607Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:32.607Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:32.608Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:32.609Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:32.611Z] [runtime-status] [20656] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:53:32.611Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:32.613Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T17:53:32.613Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T17:53:32.613Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:32.613Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:32.613Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:32.613Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19604 
+[debug] [2020-05-16T17:53:32.613Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: BUSY 
+[debug] [2020-05-16T17:53:32.613Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:32.613Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:32.613Z] [runtime-status] [19604] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:32.614Z] [runtime-status] [19604] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:32.614Z] [runtime-status] [19604] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:32.614Z] [runtime-status] [19604] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\19604 
+[debug] [2020-05-16T17:53:32.615Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:32.618Z] [runtime-status] [19604] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:32.619Z] [runtime-status] [19604] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:32.620Z] [runtime-status] [19604] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:32.974Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: IDLE 
+[debug] [2020-05-16T17:53:32.974Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:35.566Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:35.566Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:35.566Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:35.566Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:35.566Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:35.566Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:35.566Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:35.567Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:35.567Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:35.568Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:35.569Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:35.570Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:35.572Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:35.573Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:35.573Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:35.935Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:35.935Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:38.984Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:38.984Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:38.984Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:38.984Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:38.984Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:38.984Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:38.985Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:38.986Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:38.986Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:38.986Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:38.987Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:38.990Z] [runtime-status] [20656] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:53:38.991Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:38.994Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:38.994Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:38.995Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:38.995Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:38.995Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:38.995Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:38.995Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:38.995Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:38.995Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:39.002Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:39.003Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:39.003Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:39.003Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:39.005Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:39.007Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:39.007Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:39.008Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:39.386Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:39.386Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:42.396Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:42.396Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:42.397Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:42.397Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:42.397Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:42.397Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:42.397Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:42.397Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:42.398Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:42.398Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:42.398Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:42.400Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:42.402Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:42.402Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:42.403Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:42.745Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:42.745Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:44.877Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:44.877Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:44.877Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:44.877Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:44.877Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:44.877Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:44.878Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:44.879Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:44.879Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:44.879Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:44.879Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:44.881Z] [runtime-status] [20656] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:53:44.882Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:44.884Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:44.884Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:44.884Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:44.884Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:44.884Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:44.885Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:44.885Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:44.885Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:44.885Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:44.894Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:44.894Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:44.895Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:44.895Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:44.896Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:44.900Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:44.900Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:44.901Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:45.212Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:45.212Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:48.185Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:48.185Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:48.185Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:48.185Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:48.185Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:48.185Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:48.185Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:48.186Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:48.187Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:48.187Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:48.187Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:48.188Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:48.190Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:48.190Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:48.190Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:48.610Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:48.610Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:52.902Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:52.902Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:52.902Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:52.902Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:52.902Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:52.902Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:52.902Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:52.903Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:52.903Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:52.903Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:52.904Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:52.906Z] [runtime-status] [20656] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T17:53:52.908Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:52.909Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:52.909Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:53:52.909Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T17:53:52.909Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T17:53:52.909Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T17:53:52.909Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NDk2NDgsImV4cCI6MTU4OTY1MzI0OCwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.21b6by_OZhr98gCEnmX75_KyIqB4ZxReKl_cEmxucs2LYShpmgVXAQughAMy2-qz3_VmW3C99krFhov5Ha9hi9ZUIPE9C11G0gFGzp70PJkzeb97Ay8UT1ejbruAcvt_pWNuk8xxPTXqEQvqBUy3S8Ve-Wuz27v3qp__C2BrU0rgorPlsDNNoquH0_WPCM-6rqn_4Eq7K1Rv-30cQX-hjixsJ9NEPVyqrLg0ofBej_cWSDsY8a4DK48kPjxoboQsZd6V5_UBopzbeYkay64aoAOouGwcgLd5rxSevWT6370sle-t3-vZpXm-QhIYqK7G4R4UIGFBMdJqSI67a0vTIw
+[debug] [2020-05-16T17:53:52.910Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T17:53:52.910Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:52.910Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: BUSY 
+[debug] [2020-05-16T17:53:52.919Z] [runtime-status] [20656] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T17:53:52.920Z] [runtime-status] [20656] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T17:53:52.920Z] [runtime-status] [20656] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T17:53:52.920Z] [runtime-status] [20656] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20656 
+[debug] [2020-05-16T17:53:52.921Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T17:53:52.923Z] [runtime-status] [20656] Ephemeral server handling POST request 
+[debug] [2020-05-16T17:53:52.923Z] [runtime-status] [20656] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589649648,\"exp\":1589653248,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T17:53:52.923Z] [runtime-status] [20656] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T17:53:53.225Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: IDLE 
+[debug] [2020-05-16T17:53:53.225Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T17:55:08.749Z] File D:\wamp64\www\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T17:55:09.749Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T17:55:09.749Z] [worker-~diagnostic~-1798a06c-73d4-4a80-b02f-e5ca0389c93b]: FINISHING 
+[debug] [2020-05-16T17:55:09.749Z] [worker-pool] Shutting down IDLE worker (insertloan) 
+[debug] [2020-05-16T17:55:09.750Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: FINISHING 
+[debug] [2020-05-16T17:55:09.750Z] [worker-pool] Shutting down IDLE worker (insertloan) 
+[debug] [2020-05-16T17:55:09.750Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: FINISHING 
+[debug] [2020-05-16T17:55:09.750Z] [worker-pool] Shutting down IDLE worker (getTopLoans) 
+[debug] [2020-05-16T17:55:09.750Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: FINISHING 
+[debug] [2020-05-16T17:55:09.750Z] [worker-pool] Shutting down IDLE worker (getTopLoans) 
+[debug] [2020-05-16T17:55:09.750Z] [worker-getTopLoans-a7fafd3a-d504-4c6a-92c7-875cc1b9c8e6]: FINISHING 
+[debug] [2020-05-16T17:55:09.769Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:55:09.769Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T17:55:09.769Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:55:09.769Z] [worker-~diagnostic~-484a5f4b-9c1d-477a-9d0f-b30b365f6840]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\4188 
+[debug] [2020-05-16T17:55:09.769Z] [worker-~diagnostic~-484a5f4b-9c1d-477a-9d0f-b30b365f6840]: BUSY 
+[debug] [2020-05-16T17:55:09.770Z] [worker-~diagnostic~-1798a06c-73d4-4a80-b02f-e5ca0389c93b]: exited 
+[debug] [2020-05-16T17:55:09.770Z] [worker-~diagnostic~-1798a06c-73d4-4a80-b02f-e5ca0389c93b]: FINISHED 
+[debug] [2020-05-16T17:55:09.770Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: exited 
+[debug] [2020-05-16T17:55:09.770Z] [worker-getTopLoans-362027e4-06f4-49e1-995d-5bacb798e96d]: FINISHED 
+[debug] [2020-05-16T17:55:09.770Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: exited 
+[debug] [2020-05-16T17:55:09.770Z] [worker-insertloan-a62596ab-81af-407e-8dac-f49d19b00274]: FINISHED 
+[debug] [2020-05-16T17:55:09.770Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: exited 
+[debug] [2020-05-16T17:55:09.770Z] [worker-insertloan-e520470a-2d31-4254-80c6-32e0cf115ac3]: FINISHED 
+[debug] [2020-05-16T17:55:09.770Z] [worker-getTopLoans-a7fafd3a-d504-4c6a-92c7-875cc1b9c8e6]: exited 
+[debug] [2020-05-16T17:55:09.770Z] [worker-getTopLoans-a7fafd3a-d504-4c6a-92c7-875cc1b9c8e6]: FINISHED 
+[debug] [2020-05-16T17:55:10.267Z] [runtime-status] [4188] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T17:55:10.270Z] [runtime-status] [4188] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:55:10.276Z] [runtime-status] [4188] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:55:10.279Z] [runtime-status] [4188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T17:55:10.281Z] [runtime-status] [4188] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T17:55:10.326Z] [runtime-status] [4188] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T17:55:10.327Z] [runtime-status] [4188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:55:10.328Z] [runtime-status] [4188] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T17:55:10.329Z] [runtime-status] [4188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T17:55:10.329Z] [runtime-status] [4188] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T17:55:10.812Z] [runtime-status] [4188] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T17:55:10.813Z] [worker-~diagnostic~-484a5f4b-9c1d-477a-9d0f-b30b365f6840]: IDLE 

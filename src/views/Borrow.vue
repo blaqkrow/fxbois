@@ -29,7 +29,6 @@
             solo
             @keyup="getTop2Loans"
             type="number"
-            v-model="loanAmt"
             ></v-text-field>
         </div>
     <v-card-text>
