@@ -22,16 +22,19 @@
         <div>
           <v-text-field
             v-model="loanAmt"
-            dark
             label="Solo"
             placeholder="Loan Amount"
             prepend-inner-icon="$"
             solo
             @keyup="getTop2Loans"
             type="number"
-            v-model="loanAmt"
             ></v-text-field>
         </div>
+
+        <v-card
+               id="cardStyle"
+            dark
+          >
     <v-card-text>
       <v-row
         class="mb-4"
@@ -86,67 +89,27 @@
         </template>
       </v-slider>
     </v-card-text>
-        <div>
-
-        </div>
-
-        <div>
-
+        </v-card>
+        <div style="margin-top: 10px;">
         <v-card
-            color="#8573D9"
-            dark
-          >
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <div>
-                <v-card-title class="headline">$1000 EIR 4.2%</v-card-title>
-
-                <v-card-subtitle>
-                    $1000 at 6% interest
-                </v-card-subtitle>
-                
-              </div>
-
-              <v-avatar
-                class="ma-3"
-                size="80"
-                tile
-              >
-                <v-img src="https://image.flaticon.com/icons/svg/2422/2422235.svg"></v-img>
-              </v-avatar>
-            </div>
-            <v-card-actions style="margin-top: -20px;">
-                <v-btn text >Select This</v-btn>
-                <v-spacer></v-spacer>
-                <v-btn
-                    icon
-                    @click="show = !show"
-                >
-                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                </v-btn>
-                </v-card-actions>
-
-                <v-expand-transition>
-                <div v-show="show">
-                    <v-divider></v-divider>
-
-                    <v-card-text>
-                        $600 at 5% interest for 3 months <br>
-                        $400 at 3% interest for 3 months
-                    </v-card-text>
-                </div>
-                </v-expand-transition>
-          </v-card>
-        <v-card
+          v-for="(loan,index) in top2Loans"
+            :key="index"
             style="margin-top: 10px;"
             color="#E32D91"
             dark
           >
             <div class="d-flex flex-no-wrap justify-space-between">
               <div>
-                <v-card-title class="headline">12 Months</v-card-title>
+                <v-card-title class="headline">{{loan.tenor}} Months</v-card-title>
 
                 <v-card-subtitle>
-                    $1000 at 6% interest
+                    {{loan.amt}} at {{loan.interest}}% interest
+                </v-card-subtitle>
+                <v-card-subtitle style="margin-top: -30px;">
+                    ${{format(loan.actualInterest)}} actual interest
+                </v-card-subtitle>
+                  <v-card-subtitle style="margin-top: -30px;">
+                    ${{format(loan.monthlyRepayment)}} monthly repayment
                 </v-card-subtitle>
               </div>
 
@@ -189,7 +152,6 @@ export default {
             loanAmt: null,
             bpm: 1,
             isPlaying: false,
-            loanAmt:'',
         }
     },
     computed: {
@@ -205,6 +167,12 @@ export default {
       },
     },
     methods: {
+      format(number){
+        if( number)
+          return number.toFixed(2)
+        else
+          return 0
+      },
       decrement () {
         this.bpm--
       },
@@ -224,6 +192,7 @@ export default {
           amt:this.loanAmt
         }).then(response => {
           console.log(response)
+          this.top2Loans = response.data
         }) 
       },
       getTop2Loans() {
