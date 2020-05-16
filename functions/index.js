@@ -38,7 +38,7 @@ exports.insertloan = functions.https.onCall((data, context) => {
     const actualIntr = ((intr/100) * (parseFloat(data.tenor)/12)) * loanAmt
     const monthlyRepayment = (loanAmt + actualIntr)/data.tenor
     return newDoc.set({
-        tenor:data.tenor,
+        tenor:parseInt(data.tenor),
         amt: loanAmt,
         interest: intr,
         borrower:'',
@@ -55,12 +55,12 @@ exports.insertloan = functions.https.onCall((data, context) => {
  exports.getTopLoans = functions.https.onCall((data, context) =>  {
     const db = firebase.firestore()
     let loansRef = db.collection('loans')
-    return loansRef.where('tenor', '<=', data.tenorSelected).get()
+    let toploans = loansRef.where('tenor', '<=', parseInt(data.tenorSelected))
+    toploans.get()
     .then(snapshot => {
-
-        
+        console.log(snapshot)
+        return snapshot.docs        
     })
-    .then()
     .catch(err => {return err})
  })
 
@@ -105,10 +105,9 @@ function createCurrentAccount(encodedKey) {
 
 
  exports.registerMambu = functions.https.onCall((data, context) => {
-    let dataSend = {
-        
-        firstName: data.firstName,
-        lastName: data.lastName,
+    let dataSend = {        
+        firstName: data.name,
+        lastName: data.name,
         preferredLanguage: "ENGLISH",
         assignedBranchKey: "8a8e878e71c7a4d70171ca4ae85f108b",        
         idDocuments: [
@@ -117,7 +116,7 @@ function createCurrentAccount(encodedKey) {
                 issuingAuthority: "Immigration Authority of Singapore",
                 documentType: "NRIC/Passport Number",
                 validUntil: "2021-09-12",
-                documentId: "S9812345A"
+                documentId: data.idNum
             }
         ],
         addresses: [],
@@ -149,10 +148,11 @@ function createCurrentAccount(encodedKey) {
             return newUser.set({            
                 firstName: body.firstName,
                 lastName: body.lastName,
+                uid: data.uid,
                 mambuID: body.encodedKey,
                 mambuBankAcc: bankAccount.savingsAccount.encodedKey
             }).then(user => {return user}) 
-        })
+        }).catch(err => {console.log(err)})
                
         //console.log(body)        
           
