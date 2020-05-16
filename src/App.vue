@@ -2,12 +2,12 @@
   <v-app>
     <v-app-bar
       app
-      color="black"
+      id="appBarStyle"
       dark
       elevation="0"
     >
       <div class="d-flex align-center">
-        <h2 style="font-family: 'Racing Sans One', cursive;">YO.LOAN</h2>
+        <h2 style="font-family: 'GalandaModernaW00-Light'">YO.LOAN</h2>
       </div>
 
       <v-spacer></v-spacer>
@@ -66,6 +66,13 @@ export default {
         this.$store.commit('setUser', {
             user: user,
         })
+        console.log('user.uid: ', user.uid)
+        db.collection('users').doc(user.uid).get().then(doc => {
+          this.$store.commit('setUserInfo', {
+            userInfo: doc.data()
+          })
+          console.log('doc.data(): ', doc.data())
+        })
       }
       console.log('User: ', user)
     })
@@ -103,3 +110,8 @@ export default {
   }
 };
 </script>
+<style>
+#appBarStyle {
+  background-image: linear-gradient(to bottom right, #8573D9, #E32D91);
+}
+</style>

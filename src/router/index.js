@@ -7,6 +7,7 @@ import BorrowHistory from '../views/BorrowHistory.vue'
 import LendPortfolio from '../views/LendPortfolio.vue'
 import SignIn from '../views/SignIn.vue'
 import RegisterMambu from '../views/RegisterMambu.vue'
+import SignUp from '../views/SignUp.vue'
 import {auth} from '@/firebase/init'
 
 Vue.use(VueRouter)
@@ -59,6 +60,11 @@ Vue.use(VueRouter)
     meta: {
       requiresAuth: false
     },
+  },
+  {
+    path: '/signup',
+    name: 'SignUp',
+    component: SignUp,
   },
   {
     path:'/signin',

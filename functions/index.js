@@ -4,6 +4,7 @@ const axios = require('axios')
 const base64 = require('base-64');
 const fetch = require('node-fetch')
 const firebase = require('firebase')
+var rp = require('request-promise');
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
@@ -159,7 +160,23 @@ function createCurrentAccount(encodedKey) {
 
 
 })
-
-
-
- 
+exports.kyc = functions.https.onCall((data, context) => {
+    var options = {
+        method: 'POST',
+        uri: "https://niw1itg937.execute-api.ap-southeast-1.amazonaws.com/Prod/verify",
+        body: {
+            base64image: data.image
+        },
+        headers: {
+            'Content-Type': 'application/json',
+            'x-api-key' : 'jFgDThXeKFhusXOm2mXI'
+        },
+        json: true
+    }
+    console.log('Hello')
+    console.log('options: ', options)
+    return rp(options).then((body) => {
+        console.log(body)
+        return body
+    })
+})
