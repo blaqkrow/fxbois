@@ -137,6 +137,9 @@ export default {
       getUser() {
         return this.$store.getters.getUser
       },
+      getUserInfo() {
+        return this.$store.getters.getUserInfo
+      },
     },
     methods: {
       decrement () {
@@ -157,7 +160,8 @@ export default {
           tenor:this.bpm, 
           interest:this.invPerc, 
           amt:this.invAmt,
-          lender: this.getUser.uid
+          lender: this.getUser.uid,
+          lenderMambu: this.getUserInfo.mambuBankAcc
         }).then(response => {
           console.log(response)
         }) 

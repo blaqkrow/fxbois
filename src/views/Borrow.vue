@@ -122,7 +122,7 @@
 
             </div>
             <v-card-actions style="margin-top: -20px;">
-                <v-btn text >Select This</v-btn>
+                <v-btn text  @click="takeLoan(loan.lid)">Select This</v-btn>
             </v-card-actions>
           </v-card>
         </div>
@@ -164,6 +164,12 @@ export default {
       animationDuration () {
         return `${60 / this.bpm}s`
       },
+       getUser() {
+        return this.$store.getters.getUser
+      },
+      getUserInfo() {
+        return this.$store.getters.getUserInfo
+      },
     },
     methods: {
       format(number){
@@ -195,6 +201,38 @@ export default {
           this.top2Loans = response.data
         }) 
       },
+      takeLoan(loanId){
+        
+        const db = firebase.firestore()
+        const loanRef = db.collection('loans')
+        const individualLoan = loanRef.doc(loanId)
+       
+        individualLoan.update({
+          borrower: this.getUser.uid,
+          timeOfBorrow: firebase.firestore.Timestamp.fromDate(new Date())
+        })
+        .then(itm =>{
+         
+          individualLoan.get().then(doc => {
+            if (window.location.href.indexOf("localhost") > -1) {
+              firebase.functions().useFunctionsEmulator("http://localhost:5001")
+            }
+             firebase.functions().httpsCallable('transferMoneyToAnotherAcct')({
+                amount: doc.amt,
+                sendAcctId: doc.lenderMambu,
+                recvAcctId: this.getUserInfo.mambuBankAcc
+              }).then(resp => {
+                alert('Loan Complete!')
+                this.$router.push('/')
+              }).catch(err =>{return err}) 
+          })
+
+         
+            
+        })
+        .catch(err => {return err})
+        
+      }
     },
 }
 </script>

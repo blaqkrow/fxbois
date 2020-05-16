@@ -43,7 +43,8 @@ exports.insertloan = functions.https.onCall((data, context) => {
         borrower:'',
         lender:data.lender,
         monthlyRepayment: monthlyRepayment,
-        actualInterest: actualIntr
+        actualInterest: actualIntr,
+        lenderMambu: data.lenderMambu
     }).then(saved => {
         return saved;
     }).catch(err => {
@@ -59,14 +60,14 @@ exports.insertloan = functions.https.onCall((data, context) => {
     .then(snapshot => {
         let loansArr = []
         snapshot.forEach(doc =>{
-            loansArr.push({lid: data.id, data: doc.data()})
+            loansArr.push({lid: doc.id, data: doc.data()})
             console.log(doc.data())
         })
         
         index = loansArr.length - 1;
 
         while (index >= 0) {
-            if (loansArr[index].data.amt != parseInt(data.amt)) {
+            if (loansArr[index].data.amt != parseInt(data.amt) || loansArr[index].data.borrower != '') {
                 loansArr.splice(index, 1);
             } else {
                 delete loansArr[index].data.lender
@@ -168,11 +169,11 @@ function createCurrentAccount(encodedKey) {
             console.log(bankAccount)
             const db = firebase.firestore()    
             let userDB = db.collection('users')
-            const newUser = userDB.doc(body.id)
+            const newUser = userDB.doc(data.uid)
             return newUser.set({            
                 firstName: body.firstName,
                 lastName: body.lastName,
-                uid: data.uid,
+                mambuUid: body.id,
                 mambuID: body.encodedKey,
                 mambuBankAcc: bankAccount.savingsAccount.encodedKey
             }).then(user => {return user}) 
@@ -206,17 +207,19 @@ exports.kyc = functions.https.onCall((data, context) => {
 })
 
 exports.getBankAccountDetails = functions.https.onCall( async (data, context) =>{
+    
     const db = firebase.firestore()
     let userRef = db.collection('users').doc(data)
     let user = await userRef.get()
-    let acctId =  user.data().mambuBankAcc
+    let acctId =  user.data().mambuUid
+    console.log(acctId)
     const headers = {
         'Accept':'application/vnd.mambu.v2+json',
-        'Accept':'application/json',
+        'Content-Type':'application/json',
         'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
       };
     var options = {
-        uri: 'https://razerhackathon.sandbox.mambu.com/api/savings?accountHolderId=' + acctId + '&accountHolderType=CLIENT',
+        uri: 'https://razerhackathon.sandbox.mambu.com/api/deposits?accountHolderId=' + acctId + '&accountHolderType=CLIENT',
         headers: headers,
         json: true,
     }
@@ -266,7 +269,7 @@ exports.transferMoneyToAnotherAcct = functions.https.onCall((data,context) =>{
     var sendJson = {
         "type": "TRANSFER",
         "amount": data.amount,
-        "notes": "Transfer to Expenses Account",
+        "notes": "Transfer to Borrower Account",
         "toSavingsAccount": data.recvAcctId,
         "method" :"bank"
     }

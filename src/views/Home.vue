@@ -25,7 +25,7 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title></v-list-item-title>
+          <v-list-item-title>{{getUserInfo.firstName}}</v-list-item-title>
         </v-list-item-content>
 
         <v-row
@@ -41,8 +41,12 @@
       </v-list-item>
     </v-card-actions>
   </v-card>
-
-      <v-card
+  <v-card style="margin-top:10px;">
+    <v-card-text>
+      <div class="display-1 font-weight-thin">Current Balance: {{bankBalance}}</div>
+    </v-card-text>
+  </v-card>
+    <!--   <v-card
       style="margin-top: 10px;"
       max-width="400"
     class="mx-auto text-center"
@@ -75,7 +79,7 @@
     <v-card-actions class="justify-center">
       <v-btn block text>Go to Report</v-btn>
     </v-card-actions>
-  </v-card>
+  </v-card> -->
   <br>
   <br>
   </div>
@@ -97,17 +101,32 @@ export default {
         610,
         760,
       ],
+      bankBalance: ''
     }
   },
+  created() {
+    this.getBankBalance()
+  }, 
   computed: {
     getUserInfo() {
       return this.$store.getters.getUserInfo
-    }
+    },
+    getUser() {
+      return this.$store.getters.getUser
+    },
   },
-  created: {
-
-  },
+  
   methods: {
+    getBankBalance(){
+       if (window.location.href.indexOf("localhost") > -1) {
+          firebase.functions().useFunctionsEmulator("http://localhost:5001")
+        }
+        return firebase.functions().httpsCallable('getBankAccountDetails')(
+          this.getUser.uid
+        ).then(resp => {
+          this.bankBalance = '$' + resp.data[0].balances.totalBalance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }).catch(err =>{return err}) 
+    },
     test() {
       var test = firebase.functions().httpsCallable('test')
       test('Hello').then(response => {
