@@ -1,9 +1,7 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-const axios = require('axios')
 const base64 = require('base-64');
 const fetch = require('node-fetch')
-const firebase = require('firebase')
 var rp = require('request-promise');
 
 // // Create and Deploy Your First Cloud Functions
@@ -13,9 +11,9 @@ var rp = require('request-promise');
 //  response.send("Hello from Firebase!");
 // });
 
-firebase.initializeApp({
-    projectId: "fxbois-razer"
-})
+// firebase.initializeApp({
+//     projectId: "fxbois-razer"
+// })
 
 admin.initializeApp({
     //databaseURL: "http://localhost:5678"
@@ -30,19 +28,19 @@ exports.test = functions.https.onCall((data, context) => {
 })
 
 exports.insertloan = functions.https.onCall((data, context) => {
-    const db = firebase.firestore()    
+    const db = admin.firestore()    
     let loansRef = db.collection('loans')
     let newDoc = loansRef.doc()
     const loanAmt = parseFloat(data.amt)
     const intr = parseFloat(data.interest.replace('%',''))
     const actualIntr = ((intr/100) * (parseFloat(data.tenor)/12)) * loanAmt
-    const monthlyRepayment = (loanAmt + actualIntr)/data.tenor
+    const monthlyRepayment = parseFloat((loanAmt + actualIntr)/data.tenor)
     return newDoc.set({
-        tenor:data.tenor,
+        tenor:parseInt(data.tenor),
         amt: loanAmt,
         interest: intr,
         borrower:'',
-        lender:'',
+        lender:data.lender,
         monthlyRepayment: monthlyRepayment,
         actualInterest: actualIntr
     }).then(saved => {
@@ -52,17 +50,42 @@ exports.insertloan = functions.https.onCall((data, context) => {
     });
  })
 
- exports.gettoploans = functions.https.onCall((data, context) =>  {
-    data.tenorSelected = 20
-    const db = firebase.firestore()
+ exports.getTopLoans = functions.https.onCall((data, context) =>  {
+    const db = admin.firestore()
     let loansRef = db.collection('loans')
-    let topLoans = loansRef.orderBy('actualInterest').where('tenor', '<=', data.tenorSelected).get()
-    .then(snapshot => {console.log(snapshot)})
+    let toploans = loansRef.where('tenor', '>=', parseInt(data.tenorSelected))
+    return toploans.get()
+    .then(snapshot => {
+        let loansArr = []
+        snapshot.forEach(doc =>{
+            loansArr.push(doc.data())
+            console.log(doc.data())
+        })
+        
+        index = loansArr.length - 1;
+
+        while (index >= 0) {
+        if (loansArr[index].amt != parseInt(data.amt)) {
+            loansArr.splice(index, 1);
+        } else {
+            delete loansArr[index].lender
+            delete loansArr[index].borrower
+        }
+
+        index -= 1;
+        }
+        const sortedLoansArr = loansArr.slice().sort(loansCompare)
+        return sortedLoansArr.slice(0,2) 
+    })
     .catch(err => {return err})
-
-    
-
  })
+
+ function loansCompare(a, b) {
+    if (a.actualInterest > b.actualInterest) return 1;
+    if (b.actualInterest > a.actualInterest) return -1;
+  
+    return 0;
+  }
 
 
 
@@ -105,26 +128,21 @@ function createCurrentAccount(encodedKey) {
 
 
  exports.registerMambu = functions.https.onCall((data, context) => {
-    let dataSend = {
-        
-        firstName: data.firstName,
-        lastName: data.lastName,
+    let dataSend = {        
+        firstName: data.name,
+        lastName: data.name,
         preferredLanguage: "ENGLISH",
-        notes: "Enjoys playing RPG",
-        assignedBranchKey: "8a8e878e71c7a4d70171ca4ae85f108b",
-        
+        assignedBranchKey: "8a8e878e71c7a4d70171ca4ae85f108b",        
         idDocuments: [
             {
                 identificationDocumentTemplateKey: "8a8e867271bd280c0171bf7e4ec71b01",
                 issuingAuthority: "Immigration Authority of Singapore",
                 documentType: "NRIC/Passport Number",
                 validUntil: "2021-09-12",
-                documentId: "S9812345A"
+                documentId: data.idNum
             }
         ],
         addresses: [],
-       
-        
     }
 
     const headers = {
@@ -147,16 +165,17 @@ function createCurrentAccount(encodedKey) {
         .then(res => res.json())
         .then(bankAccount =>{
             console.log(bankAccount)
-            const db = firebase.firestore()    
+            const db = admin.firestore()    
             let userDB = db.collection('users')
             const newUser = userDB.doc(body.id)
             return newUser.set({            
                 firstName: body.firstName,
                 lastName: body.lastName,
+                uid: data.uid,
                 mambuID: body.encodedKey,
                 mambuBankAcc: bankAccount.savingsAccount.encodedKey
             }).then(user => {return user}) 
-        })
+        }).catch(err => {console.log(err)})
                
         //console.log(body)        
           

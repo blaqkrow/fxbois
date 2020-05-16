@@ -158,18 +158,22 @@ export default {
             auth.createUserWithEmailAndPassword(this.email,this.password)
             .then(cred => {
                 var uid = cred.user.uid
-                db.collection('users').doc(uid).set({
+                if (window.location.href.indexOf("localhost") > -1) {
+                    firebase.functions().useFunctionsEmulator("http://localhost:5001")
+                }
+                firebase.functions().httpsCallable('registerMambu')({
                     name: this.name,
                     race: this.race,
                     dob: this.dob,
                     idNum: this.idNum,
                     country: this.country,
-                    email: this.email
+                    email: this.email,
+                    uid: uid
+                
                 }).then(() => {
                     this.dialog = false
                     this.$router.push({name: 'Home'})
                 })
-
             }).catch((error) => {
                 this.dialog = false
             // Handle Errors here.

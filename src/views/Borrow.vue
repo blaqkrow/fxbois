@@ -19,69 +19,96 @@
     ></v-img>
 
     <v-card-text>
-            <v-text-field
+        <div>
+          <v-text-field
+            v-model="loanAmt"
             label="Solo"
             placeholder="Loan Amount"
             prepend-inner-icon="$"
             solo
+            type="number"
             ></v-text-field>
-        <div>
+        </div>
 
         <v-card
-            color="#8573D9"
+               id="cardStyle"
             dark
           >
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <div>
-                <v-card-title class="headline">$1000 EIR 4.2%</v-card-title>
+    <v-card-text>
+      <v-row
+        class="mb-4"
+        justify="space-between"
+      >
+        <v-col class="text-left">
+          <span
+            class="display-1 font-weight-light"
+            v-text="bpm"
+          ></span>
+          <span class="subheading font-weight-light mr-1">MONTHS</span>
+          <v-fade-transition>
+            <v-avatar
+              v-if="isPlaying"
+              :color="color"
+              :style="{
+                animationDuration: animationDuration
+              }"
+              class="mb-1 v-avatar--metronome"
+              size="12"
+            ></v-avatar>
+          </v-fade-transition>
+        </v-col>
 
-                <v-card-subtitle>
-                    $1000 at 6% interest
-                </v-card-subtitle>
-                
-              </div>
+      </v-row>
 
-              <v-avatar
-                class="ma-3"
-                size="80"
-                tile
-              >
-                <v-img src="https://image.flaticon.com/icons/svg/2422/2422235.svg"></v-img>
-              </v-avatar>
-            </div>
-            <v-card-actions style="margin-top: -20px;">
-                <v-btn text >Select This</v-btn>
-                <v-spacer></v-spacer>
-                <v-btn
-                    icon
-                    @click="show = !show"
-                >
-                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                </v-btn>
-                </v-card-actions>
+      <v-slider
+        v-model="bpm"
+        :color="color"
+        track-color="grey"
+        always-dirty
+        min="1"
+        max="36"
+        @change="getTopLoans()"
+      >
+        <template v-slot:prepend>
+          <v-icon
+            :color="color"
+            @click="decrement"
+          >
+            mdi-minus
+          </v-icon>
+        </template>
 
-                <v-expand-transition>
-                <div v-show="show">
-                    <v-divider></v-divider>
-
-                    <v-card-text>
-                        $600 at 5% interest for 3 months <br>
-                        $400 at 3% interest for 3 months
-                    </v-card-text>
-                </div>
-                </v-expand-transition>
-          </v-card>
+        <template v-slot:append>
+          <v-icon
+            :color="color"
+            @click="increment"
+          >
+            mdi-plus
+          </v-icon>
+        </template>
+      </v-slider>
+    </v-card-text>
+        </v-card>
+        <div style="margin-top: 10px;">
         <v-card
+          v-for="(loan,index) in top2Loans"
+            :key="index"
             style="margin-top: 10px;"
             color="#E32D91"
             dark
           >
             <div class="d-flex flex-no-wrap justify-space-between">
               <div>
-                <v-card-title class="headline">12 Months</v-card-title>
+                <v-card-title class="headline">{{loan.tenor}} Months</v-card-title>
 
                 <v-card-subtitle>
-                    $1000 at 6% interest
+                    {{loan.amt}} at {{loan.interest}}% interest
+                </v-card-subtitle>
+                <v-card-subtitle style="margin-top: -30px;">
+                    ${{format(loan.actualInterest)}} actual interest
+                </v-card-subtitle>
+                  <v-card-subtitle style="margin-top: -30px;">
+                    ${{format(loan.monthlyRepayment)}} monthly repayment
                 </v-card-subtitle>
               </div>
 
@@ -115,24 +142,77 @@
 </template>
 
 <script>
+import firebase from 'firebase'
 export default {
     data() {
         return {
             show: false,
+            top2Loans:[],
+            loanAmt: null,
+            bpm: 1,
+            isPlaying: false,
         }
-    }
-
+    },
+    computed: {
+      color () {
+        if (this.bpm < 5) return 'indigo'
+        if (this.bpm < 10) return 'teal'
+        if (this.bpm < 15) return 'green'
+        if (this.bpm < 25) return 'orange'
+        return 'red'
+      },
+      animationDuration () {
+        return `${60 / this.bpm}s`
+      },
+    },
+    methods: {
+      format(number){
+        if( number)
+          return number.toFixed(2)
+        else
+          return 0
+      },
+      decrement () {
+        this.bpm--
+      },
+      increment () {
+        this.bpm++
+      },
+      toggle () {
+        this.isPlaying = !this.isPlaying
+      },
+      getTopLoans(){
+       
+        if (window.location.href.indexOf("localhost") > -1) {
+          firebase.functions().useFunctionsEmulator("http://localhost:5001")
+        }
+        firebase.functions().httpsCallable('getTopLoans')({
+          tenorSelected:this.bpm, 
+          amt:this.loanAmt
+        }).then(response => {
+          console.log(response)
+          this.top2Loans = null
+          this.top2Loans = response.data
+        }) 
+      },
+    },
 }
 </script>
 
-
 <style>
-#headerStyle {
-  background: -webkit-linear-gradient(#E32D91, #8573D9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#appContent {
-  background-image: linear-gradient(to bottom right, #4775E7, #4775E7 );
-}
+@keyframes metronome-example {
+    from {
+      transform: scale(.5);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .v-avatar--metronome {
+    animation-name: metronome-example;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 </style>

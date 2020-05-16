@@ -73,7 +73,7 @@
         :color="color"
         track-color="grey"
         always-dirty
-        min="2"
+        min="1"
         max="36"
       >
         <template v-slot:prepend>
@@ -97,9 +97,7 @@
     </v-card-text>
   </v-card>
   <br>
-  <v-btn block color="#E32D91" dark @click="submitlend()">
-    Submit Lend
-    </v-btn>
+  <v-btn block color="#E32D91" dark @click="submitlend()">Submit Lend</v-btn>
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
@@ -112,6 +110,7 @@
 </template>
 
 <script>
+import db, {auth} from '@/firebase/init'
 import firebase from 'firebase'
 export default {
     data() {
@@ -153,9 +152,13 @@ export default {
         /*firebase.functions().httpsCallable('insertloan')({
           tenor:this.bpm, 
           interest:this.invPerc, 
-          amt:this.invAmt
+          amt:this.invAmt,
+          lender: this.getUser.uid
         }).then(response => {
           console.log(response)
+        }) 
+      },
+    },
         })*/
         var bankAcc = firebase.functions().httpsCallable('getBankAccountDetails')
         await bankAcc("392496367").then((resp) => {
