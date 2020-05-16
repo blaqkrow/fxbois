@@ -146,20 +146,43 @@ export default {
       toggle () {
         this.isPlaying = !this.isPlaying
       },
-      submitlend(){
-       
+      async submitlend(){
+        console.log("SUBMIT")
         if (window.location.href.indexOf("localhost") > -1) {
           firebase.functions().useFunctionsEmulator("http://localhost:5001")
         }
-        firebase.functions().httpsCallable('insertloan')({
+        /*firebase.functions().httpsCallable('insertloan')({
           tenor:this.bpm, 
           interest:this.invPerc, 
           amt:this.invAmt
         }).then(response => {
           console.log(response)
-        }) 
-      }
-    },
+        })*/
+        var bankAcc = firebase.functions().httpsCallable('getBankAccountDetails')
+        await bankAcc("392496367").then((resp) => {
+          console.log(resp)
+        })
+
+        var deposit = firebase.functions().httpsCallable('depositMoneyIntoAcct')
+        await deposit({
+          amount: 10,
+          accountId: 'KCYN750'
+        }).then((resp) =>{
+          console.log(resp)
+        })
+
+        var transfer = firebase.functions().httpsCallable('transferMoneyToAnotherAcct')
+        await deposit({
+          amount: 10,
+          sendAcctId: 'KCYN750',
+          recvAcctId: 'CWDB171'
+        }).then((resp) =>{
+          console.log(resp)
+        })
+
+        
+      },
+    }
 }
 </script>
 

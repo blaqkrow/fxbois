@@ -184,3 +184,92 @@ exports.kyc = functions.https.onCall((data, context) => {
         return body
     })
 })
+
+exports.getBankAccountDetails = functions.https.onCall( async (data, context) =>{
+    const db = firebase.firestore()
+    let userRef = db.collection('users').doc(data)
+    let user = await userRef.get()
+    let acctId =  user.data().mambuBankAcc
+    const headers = {
+        'Accept':'application/vnd.mambu.v2+json',
+        'Accept':'application/json',
+        'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
+      };
+    var options = {
+        uri: 'https://razerhackathon.sandbox.mambu.com/api/savings?accountHolderId=' + acctId + '&accountHolderType=CLIENT',
+        headers: headers,
+        json: true,
+    }
+    return rp(options).then((response) =>{
+        return response;
+    })
+
+})
+
+exports.depositMoneyIntoAcct = functions.https.onCall( async (data, context)=>{
+    console.log(data)
+    var sendJson = {
+        "amount": data.amount,
+        "notes": "Deposit into savings account",
+        "type": "DEPOSIT",
+        "method": "bank",
+        "customInformation": [
+            {
+                "value": "unique identifier for receipt",
+                "customFieldID": "IDENTIFIER_TRANSACTION_CHANNEL_I"
+            }
+        ]
+    }
+
+    const headers = {
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+        'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
+      };
+    
+    return fetch('https://razerhackathon.sandbox.mambu.com/api/savings/' + data.accountId + '/transactions',
+      {
+        method: 'POST',
+        body: JSON.stringify(sendJson),
+        headers: headers
+      })
+      .then(res => {return res.json()})
+      .then(body => {
+          var result = {
+              transactionId: body['transactionId'],
+              balance: body['balance'],
+          }
+          return result})
+})
+
+exports.transferMoneyToAnotherAcct = functions.https.onCall((data,context) =>{
+    var sendJson = {
+        "type": "TRANSFER",
+        "amount": data.amount,
+        "notes": "Transfer to Expenses Account",
+        "toSavingsAccount": data.recvAcctId,
+        "method" :"bank"
+    }
+
+    const headers = {
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+        'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
+      };
+    
+    return fetch('https://razerhackathon.sandbox.mambu.com/api/savings/' + data.sendAcctId + '/transactions',
+      {
+        method: 'POST',
+        body: JSON.stringify(sendJson),
+        headers: headers
+      })
+      .then(res => {return res.json()})
+      .then(body => {
+          var result = {
+              transactionId: body['transactionId'],
+              balance: body['balance'],
+              currencyCode: body['currencyCode']
+          }
+          return result})
+
+})

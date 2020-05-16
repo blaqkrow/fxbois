@@ -1,0 +1,131 @@
+[debug] [2020-05-16T17:01:34.181Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T17:01:34.183Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\looting\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-05-16T17:01:34.183Z] CLI Version:   8.2.0
+[debug] [2020-05-16T17:01:34.184Z] Platform:      win32
+[debug] [2020-05-16T17:01:34.184Z] Node Version:  v12.16.1
+[debug] [2020-05-16T17:01:34.185Z] Time:          Sun May 17 2020 01:01:34 GMT+0800 (Singapore Standard Time)
+[debug] [2020-05-16T17:01:34.185Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T17:01:34.185Z] 
+[debug] [2020-05-16T17:01:34.196Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-16T17:01:34.197Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project fxbois-razer. This may result in unexpected behavior.
+[debug] [2020-05-16T17:01:36.289Z] [hub] writing locator at C:\Users\looting\AppData\Local\Temp\hub-fxbois-razer.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\manybranches\2\fxbois\functions" for Cloud Functions...
+[debug] [2020-05-16T17:01:38.339Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:01:38.339Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T17:01:38.340Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:01:38.340Z] [worker-~diagnostic~-cf95ef75-b43a-4fa5-a834-c287af101233]: Assigning socketPath: \\?\pipe\D:\manybranches\2\fxbois\functions\19100 
+[debug] [2020-05-16T17:01:38.341Z] [worker-~diagnostic~-cf95ef75-b43a-4fa5-a834-c287af101233]: BUSY 
+[debug] [2020-05-16T17:01:38.933Z] [runtime-status] [19100] Functions runtime initialized. {"cwd":"D:\\manybranches\\2\\fxbois\\functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T17:01:38.935Z] [runtime-status] [19100] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:01:38.943Z] [runtime-status] [19100] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\manybranches\\2\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-05-16T17:01:38.965Z] [worker-~diagnostic~-cf95ef75-b43a-4fa5-a834-c287af101233]: exited 
+[debug] [2020-05-16T17:01:38.965Z] [worker-~diagnostic~-cf95ef75-b43a-4fa5-a834-c287af101233]: FINISHED 
+[debug] [2020-05-16T17:02:18.147Z] File D:\manybranches\2\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T17:02:18.154Z] File D:\manybranches\2\fxbois\functions\package-lock.json changed, reloading triggers 
+[debug] [2020-05-16T17:02:18.164Z] File D:\manybranches\2\fxbois\functions\package.json changed, reloading triggers 
+[debug] [2020-05-16T17:02:19.167Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-16T17:02:19.173Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:02:19.173Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T17:02:19.174Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:02:19.174Z] [worker-~diagnostic~-a7d2d1ad-bf8a-492a-b209-050d7d56dcf5]: Assigning socketPath: \\?\pipe\D:\manybranches\2\fxbois\functions\16404 
+[debug] [2020-05-16T17:02:19.174Z] [worker-~diagnostic~-a7d2d1ad-bf8a-492a-b209-050d7d56dcf5]: BUSY 
+[debug] [2020-05-16T17:02:19.807Z] [runtime-status] [16404] Functions runtime initialized. {"cwd":"D:\\manybranches\\2\\fxbois\\functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T17:02:19.810Z] [runtime-status] [16404] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:02:19.817Z] [runtime-status] [16404] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\manybranches\\2\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-05-16T17:02:19.840Z] [worker-~diagnostic~-a7d2d1ad-bf8a-492a-b209-050d7d56dcf5]: exited 
+[debug] [2020-05-16T17:02:19.840Z] [worker-~diagnostic~-a7d2d1ad-bf8a-492a-b209-050d7d56dcf5]: FINISHED 
+[debug] [2020-05-16T17:02:55.679Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T17:02:55.681Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\looting\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-05-16T17:02:55.682Z] CLI Version:   8.2.0
+[debug] [2020-05-16T17:02:55.682Z] Platform:      win32
+[debug] [2020-05-16T17:02:55.682Z] Node Version:  v12.16.1
+[debug] [2020-05-16T17:02:55.683Z] Time:          Sun May 17 2020 01:02:55 GMT+0800 (Singapore Standard Time)
+[debug] [2020-05-16T17:02:55.683Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T17:02:55.683Z] 
+[debug] [2020-05-16T17:02:55.691Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-16T17:02:55.693Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project fxbois-razer. This may result in unexpected behavior.
+[debug] [2020-05-16T17:02:57.769Z] [hub] writing locator at C:\Users\looting\AppData\Local\Temp\hub-fxbois-razer.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\manybranches\2\fxbois\functions" for Cloud Functions...
+[debug] [2020-05-16T17:03:00.330Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:03:00.331Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T17:03:00.331Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:03:00.332Z] [worker-~diagnostic~-c29f845a-6a9e-4cd0-aeac-4f9d89a06454]: Assigning socketPath: \\?\pipe\D:\manybranches\2\fxbois\functions\18968 
+[debug] [2020-05-16T17:03:00.332Z] [worker-~diagnostic~-c29f845a-6a9e-4cd0-aeac-4f9d89a06454]: BUSY 
+[debug] [2020-05-16T17:03:00.720Z] [runtime-status] [18968] Functions runtime initialized. {"cwd":"D:\\manybranches\\2\\fxbois\\functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T17:03:00.721Z] [runtime-status] [18968] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:03:00.727Z] [runtime-status] [18968] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\manybranches\\2\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-05-16T17:03:00.749Z] [worker-~diagnostic~-c29f845a-6a9e-4cd0-aeac-4f9d89a06454]: exited 
+[debug] [2020-05-16T17:03:00.749Z] [worker-~diagnostic~-c29f845a-6a9e-4cd0-aeac-4f9d89a06454]: FINISHED 
+[debug] [2020-05-16T17:13:10.664Z] File D:\manybranches\2\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T17:13:11.668Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-16T17:13:11.681Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:13:11.681Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T17:13:11.682Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:13:11.682Z] [worker-~diagnostic~-337141e3-b6ee-49c8-ab99-dde1d34540f0]: Assigning socketPath: \\?\pipe\D:\manybranches\2\fxbois\functions\20096 
+[debug] [2020-05-16T17:13:11.683Z] [worker-~diagnostic~-337141e3-b6ee-49c8-ab99-dde1d34540f0]: BUSY 
+[debug] [2020-05-16T17:13:12.089Z] [runtime-status] [20096] Functions runtime initialized. {"cwd":"D:\\manybranches\\2\\fxbois\\functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T17:13:12.091Z] [runtime-status] [20096] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:13:12.096Z] [runtime-status] [20096] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\manybranches\\2\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-05-16T17:13:12.118Z] [worker-~diagnostic~-337141e3-b6ee-49c8-ab99-dde1d34540f0]: exited 
+[debug] [2020-05-16T17:13:12.118Z] [worker-~diagnostic~-337141e3-b6ee-49c8-ab99-dde1d34540f0]: FINISHED 
+[debug] [2020-05-16T17:13:23.178Z] File D:\manybranches\2\fxbois\functions\index.js changed, reloading triggers 
+[debug] [2020-05-16T17:13:24.180Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-16T17:13:24.183Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:13:24.184Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T17:13:24.184Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:13:24.184Z] [worker-~diagnostic~-22fe4aa0-c836-4487-8d47-72808ea96767]: Assigning socketPath: \\?\pipe\D:\manybranches\2\fxbois\functions\7804 
+[debug] [2020-05-16T17:13:24.184Z] [worker-~diagnostic~-22fe4aa0-c836-4487-8d47-72808ea96767]: BUSY 
+[debug] [2020-05-16T17:13:24.625Z] [runtime-status] [7804] Functions runtime initialized. {"cwd":"D:\\manybranches\\2\\fxbois\\functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T17:13:24.629Z] [runtime-status] [7804] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:13:24.639Z] [runtime-status] [7804] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\manybranches\\2\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-05-16T17:13:24.662Z] [worker-~diagnostic~-22fe4aa0-c836-4487-8d47-72808ea96767]: exited 
+[debug] [2020-05-16T17:13:24.662Z] [worker-~diagnostic~-22fe4aa0-c836-4487-8d47-72808ea96767]: FINISHED 
+[debug] [2020-05-16T17:15:30.428Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T17:15:30.431Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\looting\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-05-16T17:15:30.431Z] CLI Version:   8.2.0
+[debug] [2020-05-16T17:15:30.431Z] Platform:      win32
+[debug] [2020-05-16T17:15:30.431Z] Node Version:  v12.16.1
+[debug] [2020-05-16T17:15:30.432Z] Time:          Sun May 17 2020 01:15:30 GMT+0800 (Singapore Standard Time)
+[debug] [2020-05-16T17:15:30.432Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T17:15:30.433Z] 
+[debug] [2020-05-16T17:15:30.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-16T17:15:30.441Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project fxbois-razer. This may result in unexpected behavior.
+[debug] [2020-05-16T17:15:32.507Z] [hub] writing locator at C:\Users\looting\AppData\Local\Temp\hub-fxbois-razer.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "D:\manybranches\2\fxbois\functions" for Cloud Functions...
+[debug] [2020-05-16T17:15:34.596Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T17:15:34.596Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T17:15:34.596Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T17:15:34.597Z] [worker-~diagnostic~-21337d6f-9977-4aa4-8229-49ddd5d328cc]: Assigning socketPath: \\?\pipe\D:\manybranches\2\fxbois\functions\7644 
+[debug] [2020-05-16T17:15:34.597Z] [worker-~diagnostic~-21337d6f-9977-4aa4-8229-49ddd5d328cc]: BUSY 
+[debug] [2020-05-16T17:15:34.991Z] [runtime-status] [7644] Functions runtime initialized. {"cwd":"D:\\manybranches\\2\\fxbois\\functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T17:15:34.992Z] [runtime-status] [7644] Disabled runtime features: undefined 
+[debug] [2020-05-16T17:15:34.998Z] [runtime-status] [7644] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\manybranches\\2\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-05-16T17:15:35.021Z] [worker-~diagnostic~-21337d6f-9977-4aa4-8229-49ddd5d328cc]: exited 
+[debug] [2020-05-16T17:15:35.021Z] [worker-~diagnostic~-21337d6f-9977-4aa4-8229-49ddd5d328cc]: FINISHED 
