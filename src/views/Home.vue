@@ -104,6 +104,9 @@ export default {
       return this.$store.getters.getUserInfo
     }
   },
+  created: {
+
+  },
   methods: {
     test() {
       var test = firebase.functions().httpsCallable('test')

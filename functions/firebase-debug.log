@@ -12780,3 +12780,1949 @@ SyntaxError: Unexpected token '<'
 [debug] [2020-05-16T17:55:10.329Z] [runtime-status] [4188] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
 [debug] [2020-05-16T17:55:10.812Z] [runtime-status] [4188] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
 [debug] [2020-05-16T17:55:10.813Z] [worker-~diagnostic~-484a5f4b-9c1d-477a-9d0f-b30b365f6840]: IDLE 
+[debug] [2020-05-16T18:27:10.761Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:27:10.761Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:27:10.761Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T18:27:10.761Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T18:27:10.761Z] [worker-pool] Cleaned up workers for insertloan: 2 --> 0 
+[debug] [2020-05-16T18:27:10.762Z] [worker-pool] Cleaned up workers for getTopLoans: 2 --> 0 
+[debug] [2020-05-16T18:27:10.781Z] [worker-pool] addWorker(insertloan) 
+[debug] [2020-05-16T18:27:10.781Z] [worker-pool] Adding worker with key insertloan, total=1 
+[debug] [2020-05-16T18:27:10.781Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T18:27:10.781Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:27:10.781Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: BUSY 
+[debug] [2020-05-16T18:27:11.275Z] [runtime-status] [21436] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T18:27:11.277Z] [runtime-status] [21436] Disabled runtime features: undefined 
+[debug] [2020-05-16T18:27:11.283Z] [runtime-status] [21436] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:11.285Z] [runtime-status] [21436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T18:27:11.288Z] [runtime-status] [21436] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T18:27:11.339Z] [runtime-status] [21436] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T18:27:11.340Z] [runtime-status] [21436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:11.341Z] [runtime-status] [21436] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:11.342Z] [runtime-status] [21436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:11.342Z] [runtime-status] [21436] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T18:27:11.905Z] [runtime-status] [21436] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T18:27:11.907Z] [runtime-status] [21436] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T18:27:11.908Z] [runtime-status] [21436] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T18:27:11.908Z] [runtime-status] [21436] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T18:27:11.913Z] [runtime-status] [21436] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:27:11.915Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:27:11.923Z] [runtime-status] [21436] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:27:11.926Z] [runtime-status] [21436] Ephemeral server survived. 
+[debug] [2020-05-16T18:27:11.928Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T18:27:11.928Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T18:27:11.928Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T18:27:11.928Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:27:11.945Z] [worker-pool] addWorker(insertloan) 
+[debug] [2020-05-16T18:27:11.945Z] [worker-pool] Adding worker with key insertloan, total=2 
+[debug] [2020-05-16T18:27:11.945Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T18:27:11.945Z] [worker-insertloan-5e2e7a38-a4f1-4e3a-ab5d-a8e05e291bba]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15436 
+[debug] [2020-05-16T18:27:11.945Z] [worker-insertloan-5e2e7a38-a4f1-4e3a-ab5d-a8e05e291bba]: BUSY 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T18:27:11.946Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: IDLE 
+[debug] [2020-05-16T18:27:11.946Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:27:12.376Z] [runtime-status] [15436] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T18:27:12.378Z] [runtime-status] [15436] Disabled runtime features: undefined 
+[debug] [2020-05-16T18:27:12.383Z] [runtime-status] [15436] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:12.385Z] [runtime-status] [15436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T18:27:12.388Z] [runtime-status] [15436] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T18:27:12.430Z] [runtime-status] [15436] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T18:27:12.431Z] [runtime-status] [15436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:12.432Z] [runtime-status] [15436] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:12.433Z] [runtime-status] [15436] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:27:12.433Z] [runtime-status] [15436] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T18:27:12.918Z] [runtime-status] [15436] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T18:27:12.920Z] [runtime-status] [15436] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T18:27:12.921Z] [runtime-status] [15436] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T18:27:12.921Z] [runtime-status] [15436] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T18:27:12.925Z] [runtime-status] [15436] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15436 
+[debug] [2020-05-16T18:27:12.928Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:27:12.957Z] [runtime-status] [15436] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:27:12.959Z] [runtime-status] [15436] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:27:13.038Z] [runtime-status] [15436] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T18:27:13.880Z] [worker-insertloan-5e2e7a38-a4f1-4e3a-ab5d-a8e05e291bba]: IDLE 
+[debug] [2020-05-16T18:27:13.880Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:38:18.928Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:38:18.928Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:38:18.928Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T18:38:18.928Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T18:38:18.928Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:38:18.928Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: BUSY 
+[debug] [2020-05-16T18:38:18.929Z] [runtime-status] [21436] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T18:38:18.931Z] [runtime-status] [21436] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T18:38:18.931Z] [runtime-status] [21436] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T18:38:18.931Z] [runtime-status] [21436] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:38:18.933Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:38:18.935Z] [runtime-status] [21436] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:38:18.936Z] [runtime-status] [21436] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T18:38:18.937Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: IDLE 
+[debug] [2020-05-16T18:38:18.937Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:38:18.937Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:38:18.937Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:38:18.937Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T18:38:18.937Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:38:18.937Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T18:38:18.938Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:38:18.938Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: BUSY 
+[debug] [2020-05-16T18:38:18.946Z] [runtime-status] [21436] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T18:38:18.947Z] [runtime-status] [21436] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T18:38:18.947Z] [runtime-status] [21436] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T18:38:18.947Z] [runtime-status] [21436] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:38:18.948Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:38:18.965Z] [runtime-status] [21436] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:38:18.966Z] [runtime-status] [21436] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:38:19.051Z] [runtime-status] [21436] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T18:38:19.824Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: IDLE 
+[debug] [2020-05-16T18:38:19.824Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:39:51.458Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:39:51.458Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:39:51.458Z] Accepted request OPTIONS /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:39:51.475Z] [worker-pool] addWorker(getTopLoans) 
+[debug] [2020-05-16T18:39:51.476Z] [worker-pool] Adding worker with key getTopLoans, total=1 
+[debug] [2020-05-16T18:39:51.476Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:39:51.476Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:39:51.476Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:39:51.944Z] [runtime-status] [15468] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T18:39:51.946Z] [runtime-status] [15468] Disabled runtime features: undefined 
+[debug] [2020-05-16T18:39:51.951Z] [runtime-status] [15468] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:51.952Z] [runtime-status] [15468] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T18:39:51.955Z] [runtime-status] [15468] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T18:39:52.003Z] [runtime-status] [15468] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T18:39:52.004Z] [runtime-status] [15468] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:52.005Z] [runtime-status] [15468] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:52.005Z] [runtime-status] [15468] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:52.006Z] [runtime-status] [15468] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T18:39:52.521Z] [runtime-status] [15468] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T18:39:52.522Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:39:52.523Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:39:52.523Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:39:52.527Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:39:52.530Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:39:52.539Z] [runtime-status] [15468] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:39:52.543Z] [runtime-status] [15468] Ephemeral server survived. 
+[debug] [2020-05-16T18:39:52.544Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T18:39:52.544Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T18:39:52.544Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:39:52.544Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:39:52.560Z] [worker-pool] addWorker(getTopLoans) 
+[debug] [2020-05-16T18:39:52.560Z] [worker-pool] Adding worker with key getTopLoans, total=2 
+[debug] [2020-05-16T18:39:52.560Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:39:52.561Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20688 
+[debug] [2020-05-16T18:39:52.561Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: BUSY 
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:39:52.562Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:39:52.562Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:39:52.997Z] [runtime-status] [20688] Functions runtime initialized. {"cwd":"D:\\wamp64\\www\\fxbois\\functions","node_version":"12.16.3"} 
+[debug] [2020-05-16T18:39:52.999Z] [runtime-status] [20688] Disabled runtime features: undefined 
+[debug] [2020-05-16T18:39:53.004Z] [runtime-status] [20688] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:53.006Z] [runtime-status] [20688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[warn] !  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to D:\fxbois-razer-firebase-adminsdk-a44os-a9b8d3d31d.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T18:39:53.009Z] [runtime-status] [20688] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T18:39:53.051Z] [runtime-status] [20688] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T18:39:53.052Z] [runtime-status] [20688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:53.053Z] [runtime-status] [20688] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:53.053Z] [runtime-status] [20688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T18:39:53.053Z] [runtime-status] [20688] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"D:\\wamp64\\www\\fxbois\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T18:39:53.444Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T18:39:53.444Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T18:39:53.444Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:39:53.444Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:39:53.444Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:39:53.444Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:39:53.444Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:39:53.444Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:39:53.446Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:39:53.446Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:39:53.446Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:39:53.447Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:39:53.470Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:39:53.471Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:39:53.568Z] [runtime-status] [15468] Ephemeral server survived. 
+[debug] [2020-05-16T18:39:53.588Z] [runtime-status] [20688] initializeApp(DEFAULT) {"databaseURL":"https://fxbois-razer.firebaseio.com","storageBucket":"fxbois-razer.appspot.com","projectId":"fxbois-razer"} 
+[debug] [2020-05-16T18:39:53.591Z] [runtime-status] [20688] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:39:53.592Z] [runtime-status] [20688] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:39:53.592Z] [runtime-status] [20688] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:39:53.597Z] [runtime-status] [20688] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20688 
+[debug] [2020-05-16T18:39:53.600Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:39:53.638Z] [runtime-status] [20688] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:39:53.641Z] [runtime-status] [20688] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:39:53.718Z] [runtime-status] [20688] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 112.77777777777777, {"user":"  monthlyRepayment: 112.77777777777777,"}
+[info] >    actualInterest: 15, {"user":"  actualInterest: 15,"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 9, {"user":"  tenor: 9,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 802.5641025641027, {"user":"  monthlyRepayment: 802.5641025641027,"}
+[info] >    actualInterest: 433.33333333333326, {"user":"  actualInterest: 433.33333333333326,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 13 {"user":"  tenor: 13"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 14, {"user":"  tenor: 14,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 73.0952380952381, {"user":"  monthlyRepayment: 73.0952380952381,"}
+[info] >    actualInterest: 23.333333333333336 {"user":"  actualInterest: 23.333333333333336"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 68.33333333333333, {"user":"  monthlyRepayment: 68.33333333333333,"}
+[info] >    actualInterest: 25 {"user":"  actualInterest: 25"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 69.16666666666667, {"user":"  monthlyRepayment: 69.16666666666667,"}
+[info] >    actualInterest: 37.5, {"user":"  actualInterest: 37.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 15 {"user":"  tenor: 15"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2', {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60 {"user":"  actualInterest: 60"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19 {"user":"  tenor: 19"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175 {"user":"  monthlyRepayment: 559.6491228070175"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999 {"user":"  actualInterest: 47.49999999999999"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    amt: 1000 {"user":"  amt: 1000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000 {"user":"  amt: 1000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334 {"user":"  actualInterest: 933.3333333333334"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111 {"user":"  monthlyRepayment: 31.11111111111111"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003 {"user":"  actualInterest: 150.00000000000003"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778 {"user":"  monthlyRepayment: 30.27777777777778"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:39:54.266Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: IDLE 
+[debug] [2020-05-16T18:39:54.266Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 68.33333333333333, {"user":"  monthlyRepayment: 68.33333333333333,"}
+[info] >    actualInterest: 25, {"user":"  actualInterest: 25,"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 69.16666666666667, {"user":"  monthlyRepayment: 69.16666666666667,"}
+[info] >    actualInterest: 37.5, {"user":"  actualInterest: 37.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2', {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60 {"user":"  actualInterest: 60"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 10000 {"user":"  amt: 10000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999, {"user":"  actualInterest: 47.49999999999999,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 25 {"user":"  tenor: 25"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:39:54.372Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:39:54.372Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:02.647Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:02.647Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:02.647Z] Accepted request OPTIONS /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:02.647Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:02.647Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:02.647Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:02.648Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:02.649Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:02.649Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:02.649Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:02.650Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:02.652Z] [runtime-status] [15468] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:40:02.653Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:02.658Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T18:40:02.658Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T18:40:02.658Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:02.658Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:02.658Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:02.658Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20688 
+[debug] [2020-05-16T18:40:02.658Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: BUSY 
+[debug] [2020-05-16T18:40:02.658Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:02.658Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:02.659Z] [runtime-status] [20688] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:02.660Z] [runtime-status] [20688] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:02.661Z] [runtime-status] [20688] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:02.661Z] [runtime-status] [20688] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20688 
+[debug] [2020-05-16T18:40:02.661Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:02.664Z] [runtime-status] [20688] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:02.664Z] [runtime-status] [20688] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:02.664Z] [runtime-status] [20688] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 13, {"user":"  tenor: 13,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 802.5641025641027, {"user":"  monthlyRepayment: 802.5641025641027,"}
+[info] >    actualInterest: 433.33333333333326, {"user":"  actualInterest: 433.33333333333326,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 14, {"user":"  tenor: 14,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 73.0952380952381, {"user":"  monthlyRepayment: 73.0952380952381,"}
+[info] >    actualInterest: 23.333333333333336 {"user":"  actualInterest: 23.333333333333336"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 68.33333333333333, {"user":"  monthlyRepayment: 68.33333333333333,"}
+[info] >    actualInterest: 25, {"user":"  actualInterest: 25,"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000 {"user":"  amt: 1000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 69.16666666666667, {"user":"  monthlyRepayment: 69.16666666666667,"}
+[info] >    actualInterest: 37.5 {"user":"  actualInterest: 37.5"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60, {"user":"  actualInterest: 60,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2', {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332 {"user":"  actualInterest: 63.33333333333332"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19 {"user":"  tenor: 19"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 47.49999999999999, {"user":"  actualInterest: 47.49999999999999,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842 {"user":"  monthlyRepayment: 55.13157894736842"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5 {"user":"  monthlyRepayment: 42.5"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239 {"user":"  monthlyRepayment: 39.88095238095239"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28 {"user":"  tenor: 28"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90 {"user":"  actualInterest: 90"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443 {"user":"  monthlyRepayment: 31.944444444444443"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90 {"user":"  actualInterest: 90"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:03.115Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: IDLE 
+[debug] [2020-05-16T18:40:03.115Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:04.881Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:04.881Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:04.881Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:04.881Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:04.881Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:04.881Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:04.881Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:04.882Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:04.883Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:04.883Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:04.883Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:04.884Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:04.887Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:04.887Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:04.888Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2', {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60 {"user":"  actualInterest: 60"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175 {"user":"  monthlyRepayment: 55.96491228070175"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999, {"user":"  actualInterest: 47.49999999999999,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239 {"user":"  monthlyRepayment: 39.88095238095239"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905 {"user":"  monthlyRepayment: 390.4761904761905"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443 {"user":"  monthlyRepayment: 31.944444444444443"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90 {"user":"  actualInterest: 90"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:05.279Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:05.279Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:07.484Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:07.484Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:07.484Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:07.484Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:07.484Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:07.484Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:07.484Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:07.485Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:07.486Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:07.486Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:07.486Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:07.487Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:07.490Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:07.491Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:07.491Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 13, {"user":"  tenor: 13,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 802.5641025641027, {"user":"  monthlyRepayment: 802.5641025641027,"}
+[info] >    actualInterest: 433.33333333333326 {"user":"  actualInterest: 433.33333333333326"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 14, {"user":"  tenor: 14,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 73.0952380952381, {"user":"  monthlyRepayment: 73.0952380952381,"}
+[info] >    actualInterest: 23.333333333333336, {"user":"  actualInterest: 23.333333333333336,"}
+[info] >    interest: 2 {"user":"  interest: 2"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 68.33333333333333, {"user":"  monthlyRepayment: 68.33333333333333,"}
+[info] >    actualInterest: 25 {"user":"  actualInterest: 25"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 69.16666666666667, {"user":"  monthlyRepayment: 69.16666666666667,"}
+[info] >    actualInterest: 37.5, {"user":"  actualInterest: 37.5,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2', {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60 {"user":"  actualInterest: 60"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999 {"user":"  actualInterest: 47.49999999999999"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905 {"user":"  monthlyRepayment: 390.4761904761905"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120 {"user":"  actualInterest: 120"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003 {"user":"  actualInterest: 150.00000000000003"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90 {"user":"  actualInterest: 90"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443 {"user":"  monthlyRepayment: 31.944444444444443"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90 {"user":"  actualInterest: 90"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:07.931Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:07.931Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:08.240Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:08.240Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:08.240Z] Accepted request OPTIONS /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:08.240Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:08.240Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:08.240Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:08.241Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:08.242Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:08.242Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:08.242Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:08.244Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:08.246Z] [runtime-status] [15468] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:40:08.247Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:08.252Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-05-16T18:40:08.252Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-05-16T18:40:08.252Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:08.252Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:08.252Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:08.252Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20688 
+[debug] [2020-05-16T18:40:08.252Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: BUSY 
+[debug] [2020-05-16T18:40:08.252Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:08.252Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:08.253Z] [runtime-status] [20688] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:08.261Z] [runtime-status] [20688] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:08.261Z] [runtime-status] [20688] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:08.262Z] [runtime-status] [20688] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\20688 
+[debug] [2020-05-16T18:40:08.263Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:08.265Z] [runtime-status] [20688] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:08.265Z] [runtime-status] [20688] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:08.265Z] [runtime-status] [20688] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175 {"user":"  monthlyRepayment: 55.96491228070175"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999 {"user":"  actualInterest: 47.49999999999999"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669 {"user":"  actualInterest: 116.66666666666669"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 10000 {"user":"  amt: 10000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003 {"user":"  actualInterest: 150.00000000000003"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003 {"user":"  actualInterest: 150.00000000000003"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36 {"user":"  tenor: 36"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:08.643Z] [worker-getTopLoans-f0b6925b-328c-469a-935f-b6f5665a5a15]: IDLE 
+[debug] [2020-05-16T18:40:08.643Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:51.423Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:51.424Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:51.424Z] Accepted request OPTIONS /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:51.424Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:51.424Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:51.424Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:51.424Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:51.425Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:51.425Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:51.425Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:51.426Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:51.428Z] [runtime-status] [15468] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:40:51.429Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:51.430Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:51.430Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:51.431Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:51.431Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:51.431Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:51.431Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:51.431Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:51.432Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:51.432Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:51.441Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:51.442Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:51.442Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:51.442Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:51.443Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:51.445Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:51.445Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:51.445Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60, {"user":"  actualInterest: 60,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2' {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332 {"user":"  actualInterest: 63.33333333333332"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999, {"user":"  actualInterest: 47.49999999999999,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28 {"user":"  tenor: 28"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120 {"user":"  actualInterest: 120"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003 {"user":"  actualInterest: 150.00000000000003"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000 {"user":"  amt: 1000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36 {"user":"  tenor: 36"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:51.793Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:51.793Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:55.510Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:55.510Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:55.510Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:55.510Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:55.510Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:55.510Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:55.511Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:55.511Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:55.512Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:55.512Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:55.512Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:55.513Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:55.516Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:55.516Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:55.517Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 802.5641025641027, {"user":"  monthlyRepayment: 802.5641025641027,"}
+[info] >    actualInterest: 433.33333333333326, {"user":"  actualInterest: 433.33333333333326,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 13, {"user":"  tenor: 13,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 73.0952380952381, {"user":"  monthlyRepayment: 73.0952380952381,"}
+[info] >    actualInterest: 23.333333333333336, {"user":"  actualInterest: 23.333333333333336,"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 14, {"user":"  tenor: 14,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 68.33333333333333, {"user":"  monthlyRepayment: 68.33333333333333,"}
+[info] >    actualInterest: 25, {"user":"  actualInterest: 25,"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 69.16666666666667, {"user":"  monthlyRepayment: 69.16666666666667,"}
+[info] >    actualInterest: 37.5, {"user":"  actualInterest: 37.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60, {"user":"  actualInterest: 60,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2' {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19 {"user":"  tenor: 19"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999, {"user":"  actualInterest: 47.49999999999999,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19 {"user":"  tenor: 19"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5 {"user":"  actualInterest: 62.5"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443 {"user":"  monthlyRepayment: 31.944444444444443"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778 {"user":"  monthlyRepayment: 30.27777777777778"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:55.892Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:55.892Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:56.357Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:56.357Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:56.357Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:56.357Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:56.357Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:56.357Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:56.357Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:56.357Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:56.359Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:56.359Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:56.359Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:56.360Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:56.362Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:56.362Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:56.363Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    tenor: 14, {"user":"  tenor: 14,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 73.0952380952381, {"user":"  monthlyRepayment: 73.0952380952381,"}
+[info] >    actualInterest: 23.333333333333336, {"user":"  actualInterest: 23.333333333333336,"}
+[info] >    interest: 2 {"user":"  interest: 2"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 68.33333333333333, {"user":"  monthlyRepayment: 68.33333333333333,"}
+[info] >    actualInterest: 25, {"user":"  actualInterest: 25,"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 37.5, {"user":"  actualInterest: 37.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 69.16666666666667 {"user":"  monthlyRepayment: 69.16666666666667"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 60, {"user":"  actualInterest: 60,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2', {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886 {"user":"  monthlyRepayment: 58.888888888888886"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 47.49999999999999, {"user":"  actualInterest: 47.49999999999999,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842 {"user":"  monthlyRepayment: 55.13157894736842"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239 {"user":"  monthlyRepayment: 39.88095238095239"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111 {"user":"  monthlyRepayment: 31.11111111111111"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778 {"user":"  monthlyRepayment: 30.27777777777778"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443 {"user":"  monthlyRepayment: 31.944444444444443"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000 {"user":"  amt: 1000"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:56.739Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:56.739Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:57.568Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:57.568Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:57.568Z] Accepted request OPTIONS /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:57.568Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:57.569Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:57.569Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:57.569Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:57.570Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:57.570Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:57.571Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:57.571Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:57.573Z] [runtime-status] [15468] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:40:57.574Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:57.575Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:57.575Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:57.575Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:57.576Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:57.576Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:57.576Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:57.576Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:57.577Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:57.577Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:57.584Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:57.585Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:57.585Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:57.585Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:57.586Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:57.589Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:57.589Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:57.589Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332 {"user":"  actualInterest: 63.33333333333332"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333 {"user":"  actualInterest: 633.3333333333333"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 47.49999999999999, {"user":"  actualInterest: 47.49999999999999,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842 {"user":"  monthlyRepayment: 55.13157894736842"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5 {"user":"  actualInterest: 62.5"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239, {"user":"  monthlyRepayment: 39.88095238095239,"}
+[info] >    actualInterest: 116.66666666666669 {"user":"  actualInterest: 116.66666666666669"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5 {"user":"  interest: 5"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443 {"user":"  monthlyRepayment: 31.944444444444443"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:57.944Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:57.944Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:40:59.479Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:40:59.479Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:40:59.479Z] Accepted request POST /fxbois-razer/us-central1/getTopLoans --> getTopLoans
+[debug] [2020-05-16T18:40:59.479Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:40:59.479Z] [worker-pool] submitWork(triggerId=getTopLoans) 
+[debug] [2020-05-16T18:40:59.479Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:59.479Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: BUSY 
+[debug] [2020-05-16T18:40:59.480Z] [runtime-status] [15468] Trigger "getTopLoans" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getTopLoans"
+[debug] [2020-05-16T18:40:59.481Z] [runtime-status] [15468] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"getTopLoans","entryPoint":"getTopLoans"} 
+[debug] [2020-05-16T18:40:59.481Z] [runtime-status] [15468] Running getTopLoans in mode HTTPS 
+[debug] [2020-05-16T18:40:59.481Z] [runtime-status] [15468] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\15468 
+[debug] [2020-05-16T18:40:59.481Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:40:59.484Z] [runtime-status] [15468] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:40:59.484Z] [runtime-status] [15468] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:40:59.485Z] [runtime-status] [15468] Ephemeral server survived. 
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 68.33333333333333, {"user":"  monthlyRepayment: 68.33333333333333,"}
+[info] >    actualInterest: 25, {"user":"  actualInterest: 25,"}
+[info] >    interest: 2, {"user":"  interest: 2,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 15, {"user":"  tenor: 15,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 69.16666666666667, {"user":"  monthlyRepayment: 69.16666666666667,"}
+[info] >    actualInterest: 37.5 {"user":"  actualInterest: 37.5"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 18, {"user":"  tenor: 18,"}
+[info] >    lender: '46pxequz4ohfMnK4HWc20YG0SSd2', {"user":"  lender: '46pxequz4ohfMnK4HWc20YG0SSd2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 58.888888888888886, {"user":"  monthlyRepayment: 58.888888888888886,"}
+[info] >    actualInterest: 60 {"user":"  actualInterest: 60"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.96491228070175, {"user":"  monthlyRepayment: 55.96491228070175,"}
+[info] >    actualInterest: 63.33333333333332, {"user":"  actualInterest: 63.33333333333332,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 1000 {"user":"  amt: 1000"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 559.6491228070175, {"user":"  monthlyRepayment: 559.6491228070175,"}
+[info] >    actualInterest: 633.3333333333333, {"user":"  actualInterest: 633.3333333333333,"}
+[info] >    interest: 4 {"user":"  interest: 4"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 19, {"user":"  tenor: 19,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 55.13157894736842, {"user":"  monthlyRepayment: 55.13157894736842,"}
+[info] >    actualInterest: 47.49999999999999 {"user":"  actualInterest: 47.49999999999999"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 42.5, {"user":"  monthlyRepayment: 42.5,"}
+[info] >    actualInterest: 62.5, {"user":"  actualInterest: 62.5,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 25, {"user":"  tenor: 25,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    actualInterest: 116.66666666666669, {"user":"  actualInterest: 116.66666666666669,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 39.88095238095239 {"user":"  monthlyRepayment: 39.88095238095239"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 390.4761904761905, {"user":"  monthlyRepayment: 390.4761904761905,"}
+[info] >    actualInterest: 933.3333333333334, {"user":"  actualInterest: 933.3333333333334,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    amt: 10000, {"user":"  amt: 10000,"}
+[info] >    tenor: 28, {"user":"  tenor: 28,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22' {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    monthlyRepayment: 31.11111111111111, {"user":"  monthlyRepayment: 31.11111111111111,"}
+[info] >    actualInterest: 120, {"user":"  actualInterest: 120,"}
+[info] >    interest: 4, {"user":"  interest: 4,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '' {"user":"  borrower: ''"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5, {"user":"  interest: 5,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2' {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2'"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2', {"user":"  lender: 'dKAcWt2QQBOcG07WRja6i7w8w4P2',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3 {"user":"  interest: 3"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    amt: 1000, {"user":"  amt: 1000,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 31.944444444444443, {"user":"  monthlyRepayment: 31.944444444444443,"}
+[info] >    actualInterest: 150.00000000000003, {"user":"  actualInterest: 150.00000000000003,"}
+[info] >    interest: 5 {"user":"  interest: 5"}
+[info] >  } {"user":"}"}
+[info] >  { {"user":"{"}
+[info] >    lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22', {"user":"  lender: '3ekiXXVPF5XqyHzFISTIqt3MpS22',"}
+[info] >    borrower: '', {"user":"  borrower: '',"}
+[info] >    monthlyRepayment: 30.27777777777778, {"user":"  monthlyRepayment: 30.27777777777778,"}
+[info] >    actualInterest: 90, {"user":"  actualInterest: 90,"}
+[info] >    interest: 3, {"user":"  interest: 3,"}
+[info] >    tenor: 36, {"user":"  tenor: 36,"}
+[info] >    amt: 1000 {"user":"  amt: 1000"}
+[info] >  } {"user":"}"}
+[info] i  functions: Finished "getTopLoans" in ~1s
+[debug] [2020-05-16T18:40:59.851Z] [worker-getTopLoans-3780b2df-49b6-4de1-a36a-ac9428485014]: IDLE 
+[debug] [2020-05-16T18:40:59.851Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:41:25.472Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:41:25.472Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:41:25.472Z] Accepted request OPTIONS /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T18:41:25.472Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T18:41:25.473Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:41:25.473Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: BUSY 
+[debug] [2020-05-16T18:41:25.474Z] [runtime-status] [21436] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T18:41:25.475Z] [runtime-status] [21436] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T18:41:25.475Z] [runtime-status] [21436] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T18:41:25.475Z] [runtime-status] [21436] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:41:25.477Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:41:25.481Z] [runtime-status] [21436] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T18:41:25.482Z] [runtime-status] [21436] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T18:41:25.483Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: IDLE 
+[debug] [2020-05-16T18:41:25.483Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T18:41:25.483Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T18:41:25.483Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T18:41:25.483Z] Accepted request POST /fxbois-razer/us-central1/insertloan --> insertloan
+[debug] [2020-05-16T18:41:25.483Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImZjMmM4YmIyNmE3OGM0M2JkODYzNzA1YjNkNzkyMWI0ZTY0MjVkNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZnhib2lzLXJhemVyIiwiYXVkIjoiZnhib2lzLXJhemVyIiwiYXV0aF90aW1lIjoxNTg5NjQ5NjQ4LCJ1c2VyX2lkIjoiNDZweGVxdXo0b2hmTW5LNEhXYzIwWUcwU1NkMiIsInN1YiI6IjQ2cHhlcXV6NG9oZk1uSzRIV2MyMFlHMFNTZDIiLCJpYXQiOjE1ODk2NTI5NDksImV4cCI6MTU4OTY1NjU0OSwiZW1haWwiOiIxMjM0NUAxMjMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIjEyMzQ1QDEyMy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.swpUITfZZgmzoRukbik9-nfza3_CnhGFzEug4-ZccPwGqN8r5R35Tyl6ftffuSjd5hzKEXXwVHV2mQnffiMmvJEa_6ZZfkyGpE_XEEGDrTCegFTs6XKhIZ2wFHZToiG59F-43YQvZ_zvvFuDfcI09CDRaaAn2JaSCOu71fTXVb2ZkT4-XGxBfgpD_uChmIjzmYW-qtEs596simAjE1m71CGBn3ah7GpbMp489jptr-HyXSHz3GLbJnDYsr7TaP4Rmc4P6L6T3z6mQSPEeZXLUmdBijngf6LsM98AjNcjymCKmwCSObZYdhMCjmFnhSNsO51jzr6l4O1UcckExYhGqg
+[debug] [2020-05-16T18:41:25.484Z] [worker-pool] submitWork(triggerId=insertloan) 
+[debug] [2020-05-16T18:41:25.484Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: Assigning socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:41:25.484Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: BUSY 
+[debug] [2020-05-16T18:41:25.492Z] [runtime-status] [21436] Trigger "insertloan" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "insertloan"
+[debug] [2020-05-16T18:41:25.493Z] [runtime-status] [21436] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"insertloan","entryPoint":"insertloan"} 
+[debug] [2020-05-16T18:41:25.493Z] [runtime-status] [21436] Running insertloan in mode HTTPS 
+[debug] [2020-05-16T18:41:25.493Z] [runtime-status] [21436] Attempting to listen to socketPath: \\?\pipe\D:\wamp64\www\fxbois\functions\21436 
+[debug] [2020-05-16T18:41:25.494Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T18:41:25.497Z] [runtime-status] [21436] Ephemeral server handling POST request 
+[debug] [2020-05-16T18:41:25.497Z] [runtime-status] [21436] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"token\":{\"iss\":\"https://securetoken.google.com/fxbois-razer\",\"aud\":\"fxbois-razer\",\"auth_time\":1589649648,\"user_id\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"sub\":\"46pxequz4ohfMnK4HWc20YG0SSd2\",\"iat\":1589652949,\"exp\":1589656549,\"email\":\"12345@123.com\",\"email_verified\":false,\"firebase\":{\"identities\":{\"email\":[\"12345@123.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"46pxequz4ohfMnK4HWc20YG0SSd2\"}}"} 
+[debug] [2020-05-16T18:41:25.497Z] [runtime-status] [21436] Ephemeral server survived. 
+[info] i  functions: Finished "insertloan" in ~1s
+[debug] [2020-05-16T18:41:26.209Z] [worker-insertloan-def53738-f3f3-44ec-985b-c2c86dd32aee]: IDLE 
+[debug] [2020-05-16T18:41:26.209Z] [work-queue] {"queueLength":0,"workRunningCount":1}
