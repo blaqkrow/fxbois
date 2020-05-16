@@ -174,7 +174,6 @@ export default {
                     this.dialog = false
                     this.$router.push({name: 'Home'})
                 })
-
             }).catch((error) => {
                 this.dialog = false
             // Handle Errors here.
