@@ -20,13 +20,15 @@
 
     <v-card-text>
         <v-text-field
+        v-model="invAmt"
         label="Solo"
         placeholder="Lend Amount"
         prepend-inner-icon="$"
         solo
         ></v-text-field>
         <v-select
-            style="margin-top: -15px"
+          v-model="invPerc"
+          style="margin-top: -15px"
           :items="investmentPerc"
           label="Investment %"
           solo
@@ -71,7 +73,7 @@
         :color="color"
         track-color="grey"
         always-dirty
-        min="2"
+        min="1"
         max="36"
       >
         <template v-slot:prepend>
@@ -95,6 +97,9 @@
     </v-card-text>
   </v-card>
   <br>
+  <v-btn block color="secondary" dark @click="submitlend()">
+    Submit Lend
+    </v-btn>
   <v-btn block color="#E32D91" dark>Submit Lend</v-btn>
   <v-btn block color="#E32D91" dark @click="submitlend()">Submit Lend</v-btn>
 
@@ -158,15 +163,6 @@ export default {
           console.log(response)
         }) 
       },
-      test() {
-        db.collection('loans').where("tenor", ">=", 10).get()
-        .then( snap => {
-          snap.forEach(doc => {
-            console.log('doc: ', doc.data())
-
-          })
-        })
-      }
     },
 }
 </script>

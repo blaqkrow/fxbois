@@ -6,8 +6,8 @@ import Lend from '../views/Lend.vue'
 import BorrowHistory from '../views/BorrowHistory.vue'
 import LendPortfolio from '../views/LendPortfolio.vue'
 import SignIn from '../views/SignIn.vue'
+import RegisterMambu from '../views/RegisterMambu.vue'
 import SignUp from '../views/SignUp.vue'
-
 import {auth} from '@/firebase/init'
 
 Vue.use(VueRouter)
@@ -51,6 +51,14 @@ Vue.use(VueRouter)
     component: LendPortfolio,
     meta: {
       requiresAuth: true
+    },
+  },
+  {
+    path: '/registerMambu',
+    name: 'registerMambu',
+    component: RegisterMambu,
+    meta: {
+      requiresAuth: false
     },
   },
   {

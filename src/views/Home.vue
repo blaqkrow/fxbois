@@ -111,6 +111,13 @@ export default {
         console.log(response)
         this.response = response.data
       }) 
+    },
+    loan() {
+      firebase.functions().useFunctionsEmulator('http://localhost:5001');
+      var test = firebase.functions().httpsCallable('insertloan')
+      test({tenor:10, interest:0.05, amt:10000}).then(response => {
+        console.log(response)
+      }) 
     }
   }
 }
