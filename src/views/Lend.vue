@@ -77,7 +77,7 @@
         :color="color"
         track-color="grey"
         always-dirty
-        min="2"
+        min="1"
         max="36"
       >
         <template v-slot:prepend>

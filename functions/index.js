@@ -51,16 +51,16 @@ exports.insertloan = functions.https.onCall((data, context) => {
     });
  })
 
- exports.gettoploans = functions.https.onCall((data, context) =>  {
-    data.tenorSelected = 20
+ exports.getTopLoans = functions.https.onCall((data, context) =>  {
     const db = firebase.firestore()
     let loansRef = db.collection('loans')
-    let topLoans = loansRef.orderBy('actualInterest').where('tenor', '<=', data.tenorSelected).get()
-    .then(snapshot => {console.log(snapshot)})
+    return loansRef.where('tenor', '<=', data.tenorSelected).get()
+    .then(snapshot => {
+
+        return snapshot.docs
+    })
+    .then()
     .catch(err => {return err})
-
-    
-
  })
 
 
