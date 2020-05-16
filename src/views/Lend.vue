@@ -97,10 +97,9 @@
     </v-card-text>
   </v-card>
   <br>
-  <v-btn block color="secondary" dark @click="submitlend()">
+  <v-btn block color="#E32D91" dark @click="submitlend()">
     Submit Lend
     </v-btn>
-  <v-btn block color="#E32D91" dark>Submit Lend</v-btn>
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
