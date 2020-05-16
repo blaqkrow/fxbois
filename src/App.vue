@@ -7,7 +7,7 @@
       elevation="0"
     >
       <div class="d-flex align-center">
-        <h2 style="font-family: 'GalandaModernaW00-Light'">YO.LOAN</h2>
+        <v-img width="120" src="./assets/YO.LOAN.png"></v-img>
       </div>
 
       <v-spacer></v-spacer>

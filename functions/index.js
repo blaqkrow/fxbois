@@ -1,9 +1,7 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-const axios = require('axios')
 const base64 = require('base-64');
 const fetch = require('node-fetch')
-const firebase = require('firebase')
 var rp = require('request-promise');
 
 // // Create and Deploy Your First Cloud Functions
@@ -13,9 +11,9 @@ var rp = require('request-promise');
 //  response.send("Hello from Firebase!");
 // });
 
-firebase.initializeApp({
-    projectId: "fxbois-razer"
-})
+// firebase.initializeApp({
+//     projectId: "fxbois-razer"
+// })
 
 admin.initializeApp({
     //databaseURL: "http://localhost:5678"
@@ -30,7 +28,7 @@ exports.test = functions.https.onCall((data, context) => {
 })
 
 exports.insertloan = functions.https.onCall((data, context) => {
-    const db = firebase.firestore()    
+    const db = admin.firestore()    
     let loansRef = db.collection('loans')
     let newDoc = loansRef.doc()
     const loanAmt = parseFloat(data.amt)
@@ -53,7 +51,7 @@ exports.insertloan = functions.https.onCall((data, context) => {
  })
 
  exports.getTopLoans = functions.https.onCall((data, context) =>  {
-    const db = firebase.firestore()
+    const db = admin.firestore()
     let loansRef = db.collection('loans')
     let toploans = loansRef.where('tenor', '>=', parseInt(data.tenorSelected))
     return toploans.get()
@@ -167,7 +165,7 @@ function createCurrentAccount(encodedKey) {
         .then(res => res.json())
         .then(bankAccount =>{
             console.log(bankAccount)
-            const db = firebase.firestore()    
+            const db = admin.firestore()    
             let userDB = db.collection('users')
             const newUser = userDB.doc(body.id)
             return newUser.set({            
