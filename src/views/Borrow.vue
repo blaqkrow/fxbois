@@ -217,9 +217,10 @@ export default {
             if (window.location.href.indexOf("localhost") > -1) {
               firebase.functions().useFunctionsEmulator("http://localhost:5001")
             }
+            
              firebase.functions().httpsCallable('transferMoneyToAnotherAcct')({
-                amount: doc.amt,
-                sendAcctId: doc.lenderMambu,
+                amount: doc.data().amt,
+                sendAcctId: doc.data().lenderMambu,
                 recvAcctId: this.getUserInfo.mambuBankAcc
               }).then(resp => {
                 alert('Loan Complete!')

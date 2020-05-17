@@ -42,9 +42,11 @@
     </v-card-actions>
   </v-card>
   <v-card style="margin-top:10px;">
-    <v-card-text>
-      <div class="display-1 font-weight-thin">Current Balance: {{bankBalance}}</div>
-    </v-card-text>
+    
+      <v-card-title class="headline"><b> {{bankBalance}}</b></v-card-title>
+      <v-card-subtitle>
+          Balance
+      </v-card-subtitle>
   </v-card>
     <!--   <v-card
       style="margin-top: 10px;"

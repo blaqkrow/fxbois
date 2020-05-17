@@ -219,7 +219,7 @@ exports.getBankAccountDetails = functions.https.onCall( async (data, context) =>
         'Authorization' : 'Basic VGVhbTc6cGFzczEzMEFDRTE5Qzg='
       };
     var options = {
-        uri: 'https://razerhackathon.sandbox.mambu.com/api/deposits?accountHolderId=' + acctId + '&accountHolderType=CLIENT',
+        uri: 'https://razerhackathon.sandbox.mambu.com/api/deposits?accountHolderId=' + acctId.trim() + '&accountHolderType=CLIENT',
         headers: headers,
         json: true,
     }

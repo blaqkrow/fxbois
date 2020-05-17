@@ -97,7 +97,7 @@
     </v-card-text>
   </v-card>
   <br>
-  <v-btn block color="#E32D91" dark @click="submitlend()">Submit Lend</v-btn>
+  <v-btn block color="#E32D91" dark @click="submitlend()">Invest</v-btn>
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
@@ -152,7 +152,7 @@ export default {
         this.isPlaying = !this.isPlaying
       },
       submitlend(){
-        console.log("SUBMIT")
+        
         if (window.location.href.indexOf("localhost") > -1) {
           firebase.functions().useFunctionsEmulator("http://localhost:5001")
         }
@@ -164,6 +164,8 @@ export default {
           lenderMambu: this.getUserInfo.mambuBankAcc
         }).then(response => {
           console.log(response)
+          alert('Investment Done!')
+          
         }) 
       },
     },
