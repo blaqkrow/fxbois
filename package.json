@@ -10,7 +10,7 @@
     "axios": "^0.19.2",
     "base-64": "^0.1.0",
     "firebase": "^7.14.4",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "register-service-worker": "^1.7.1",
     "request-promise": "^4.2.5",
     "requests": "^0.3.0",
